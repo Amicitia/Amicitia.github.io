@@ -265,6 +265,7 @@ footer {
 #sidebartoggle {
     width: 30%;
     right: 0;
+    margin-top: 7px;
 }
 
 main {

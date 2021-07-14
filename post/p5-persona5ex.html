@@ -47,8 +47,8 @@
                         </ul>
                     </li>
                     <li class="toproot">
-                        <a id="sidebartoggle" style="height:37px;line-height:37px;"><span><i class="fa fa-user-circle"></i> Profile <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
-                        <ul id="side">
+                        <a id="sidebartoggle" style="height:20px;"><span><i class="fa fa-user-circle"></i> Profile <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
+                        <ul style="padding: 0 !important; -webkit-box-shadow: none !important; box-shadow: none !important; ">
                             <li>
                                 <div class="sidebar">
                                     <div class="component">
@@ -80,7 +80,7 @@
                                                 </div>
                                             </a>
                                         </div> <!--End Contents-->
-                                    </div>  <!--End Component-->
+                                    </div> <!--End Component-->
                                 </div> <!--End Sidebar-->
                             </li>
                         </ul>
@@ -109,7 +109,6 @@
                 <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
                 <div class="header-inner">
                     <!--Title--><center><a href="https://amicitia.github.io"><img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;"><h1>Mods & Resources</h1></a></center>            <!--Waves-->
-<div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
@@ -123,7 +122,6 @@
     </svg>
 </div>
 <!--Waves End-->
-        </div>
 <!--Header End-->
     </div>
 <!--Navbar End-->
@@ -215,7 +213,7 @@
                     <a href="https://amicitia.github.io/author/DeathChaosV2">DeathChaosV2</a>
                 </td>
                 <td>
-                    07/07/2021 (updated)
+                    07/11/2021 (updated)
                 </td>
             </tr>
         </table>
@@ -233,7 +231,7 @@
                     </span>
                 </td>
                 <td class="postinner">
-                    P5 EX is a collection of custom code patches (and also a mod) made possible by TGE's mod prx implementation that allows both the re-use and total reconstruction of original game functions.<br><br>This is the result of roughly 2 years of nonstop research and Reverse Engineering.<br><br>INSTALLATION INSTRUCTIONS:<br><br>• Right click you game in the list in RPCS3, select change custom configuration, go to the advanced tab and enable Debug Console Mode, hit apply and close settings.<br>• <br><br>• <br><br>• Right click your game in the game list in RPCS3, select Open Install Folder, this will bring you inside the game's USRDIR folder.<br>• <br><br>• Download this cpk (BGM), this other cpk (P5R Bustups), and the 7z file called P5EX_PRX_PATCH at the end of this post.<br>• NOTE: You can use the 4k P5R bustups mod with P5EX, you can instead download THIS prebuild CPK with the 4k P5R bustups, rename it to remove the "4k" from the name (so it should just be named P5RBustups_03.cpk) and place it in your USRDIR, and remember to enable the 4 ... 
+                    P5 EX is a collection of custom code patches (and also a mod) made possible by TGE's mod prx implementation that allows both the re-use and total reconstruction of original game functions.<br><br>This is the result of roughly 2 years of nonstop research and Reverse Engineering.<br><br>CURRENT VERSIONS:<br>P5EX YML Patch: 1.1<br>Mod SPRX YML Patch: 1.4<br>P5 EX Aemulus Mod: 1.5<br><br>P5R bustups CPK updated: never<br>Expanded BGM CPK updated: 11/July/2021<br><br>INSTALLATION INSTRUCTIONS:<br><br>• Right click you game in the list in RPCS3, select change custom configuration, go to the advanced tab and enable Debug Console Mode, hit apply and close settings.<br>• <br><br>• <br><br>• Right click your game in the game list in RPCS3, select Open Install Folder, this will bring you inside the game's USRDIR folder.<br>• <br><br>• Download this cpk (BGM), this other cpk (P5R Bustups), and the 7z file called P5EX_PRX_PATCH at the end of this post.<br>• NOTE: You can use the 4k P5R bustups mod with P5EX, you can instead download THIS prebuild CPK with the 4k P5R ... 
                 </td>
             </tr>
         </table>
@@ -289,11 +287,11 @@
                                                         };
                                                     </script>
                                                     <div id="colorpicker" style="display:none;">
-                                                        <div class="text">
+                                                        <div class="toggle">
                                                             <div class="toggle-title" style="cursor: pointer;" onclick="updateColorPicker()">
                                                                 <a><i class="fa fa-gears"></i> Theme Settings</a>
                                                             </div>
-                                                            <div class="toggle-inner" style="display:none;">
+                                                            <div class="toggle-inner">
                                                                 <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
                                                                 <br><button id="customhover" data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
                                                                 <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>

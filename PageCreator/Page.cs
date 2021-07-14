@@ -71,7 +71,7 @@ namespace Amicitia.github.io.PageCreator
             html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader 
                 + $"<center><a href=\"https://amicitia.github.io\"><img src=\"https://amicitia.github.io/images/logo.svg\" " +
                 $"style=\"width:150px;height:150px;\"><h1>{pageName}</h1></a></center>"
-                + Properties.Resources.IndexBeforeContent + "<b><a href=\"https://shrinefox.com/\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> > Resources > Browse Mods & Tools</b><br><br>.";
+                + Properties.Resources.IndexBeforeContent + "<b><a href=\"https://shrinefox.com/\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> > Resources > Browse Mods & Tools</b><br><br>";
             // Update selected navigation value
             html = html.Replace("<div class=\"content\">", $"{Properties.Resources.Navigation}<div class=\"content\">");
             html = html.Replace($"value=\"{game.ToLower()}\">", $"value=\"{game.ToLower()}\" selected>").Replace($"value=\"{type}\">", $"value=\"{type}\" selected>");

@@ -47,8 +47,8 @@
                         </ul>
                     </li>
                     <li class="toproot">
-                        <a id="sidebartoggle" style="height:37px;line-height:37px;"><span><i class="fa fa-user-circle"></i> Profile <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
-                        <ul id="side">
+                        <a id="sidebartoggle" style="height:20px;"><span><i class="fa fa-user-circle"></i> Profile <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
+                        <ul style="padding: 0 !important; -webkit-box-shadow: none !important; box-shadow: none !important; ">
                             <li>
                                 <div class="sidebar">
                                     <div class="component">
@@ -80,7 +80,7 @@
                                                 </div>
                                             </a>
                                         </div> <!--End Contents-->
-                                    </div>  <!--End Component-->
+                                    </div> <!--End Component-->
                                 </div> <!--End Sidebar-->
                             </li>
                         </ul>
@@ -109,7 +109,6 @@
                 <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
                 <div class="header-inner">
                     <!--Title--><center><a href="https://amicitia.github.io"><img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;"><h1>Mods & Resources</h1></a></center>            <!--Waves-->
-<div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
@@ -123,7 +122,6 @@
     </svg>
 </div>
 <!--Waves End-->
-        </div>
 <!--Header End-->
     </div>
 <!--Navbar End-->
@@ -233,7 +231,7 @@
                     </span>
                 </td>
                 <td class="postinner">
-                    Introduction<br>This guide is intended to show users how to replace textures/create texture mods for Persona 5 Strikers.<br><br>Let’s start with a basic texture replacement, like editing the color of Joker’s hair. I will be using this as the example throughout, but the same process will apply for any textures you want to edit. <br><br>For other textures, there are user-compiled articles listing textures (including UI textures) and their locations on the Amicitia wiki. <br><br>Tools Needed<br><br>• Cethleann - Essential for unpacking and decrypting. The Koei-Tecmo data tools. You can download the latest builds here at Appveyor. <br>• Gust Tools - More specifically, gust_g1t, for texture replacements (which are g1t files). Get the latest releases here. <br>• Noesis - For viewing the g1t textures. Needs the g1m/g1t/g1a importer plugin which you can find here.<br><br>To patch RDB files, you can use either:<br><br>• Aemulus - Not only does it manage P5S mods, it can also patch .rdb files the same way RDB Tool does.<br>• RDB Tool - Makes  ... 
+                    Introduction<br>This guide is intended to show users how to replace textures/create texture mods for Persona 5 Strikers.<br><br>Let’s start with a basic texture replacement, like editing the color of Joker’s hair. I will be using this as the example throughout, but the same process will apply for any textures you want to edit. <br><br>For other textures, there are user-compiled articles listing textures (including UI textures) and their locations on the Amicitia wiki. <br><br>Tools Needed<br><br>• Cethleann - Essential for unpacking and decrypting. The Koei-Tecmo data tools. You can download the latest builds here at Appveyor. <br>• Gust Tools - More specifically, gust_g1t, for texture replacements (which are g1t files). Get the latest releases here. <br>• Noesis - For viewing the g1t textures. Needs the g1m/g1t/g1a importer plugin which you can find here.<br><br>To patch RDB files, you can use either:<br><br>• Aemulus - Not only does it manage P5S mods, it can also patch .rdb files the same way RDB Tool does.<br>• RDB Tool - Makes  ... 
                 </td>
             </tr>
         </table>
@@ -289,11 +287,11 @@
                                                         };
                                                     </script>
                                                     <div id="colorpicker" style="display:none;">
-                                                        <div class="text">
+                                                        <div class="toggle">
                                                             <div class="toggle-title" style="cursor: pointer;" onclick="updateColorPicker()">
                                                                 <a><i class="fa fa-gears"></i> Theme Settings</a>
                                                             </div>
-                                                            <div class="toggle-inner" style="display:none;">
+                                                            <div class="toggle-inner">
                                                                 <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
                                                                 <br><button id="customhover" data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
                                                                 <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>
