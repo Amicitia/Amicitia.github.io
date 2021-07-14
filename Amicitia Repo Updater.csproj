@@ -128,6 +128,8 @@
     <Content Include="Templates\Flowscript\flowscript.html" />
     <Content Include="Templates\Flowscript\hookingfunctions.html" />
     <Content Include="Templates\Flowscript\importing.html" />
+    <Content Include="Templates\Forum\LoginAndNotifications.html" />
+    <Content Include="Templates\Forum\overall_header.html" />
     <Content Include="Templates\IndexAfterHeader.html" />
     <Content Include="Templates\IndexBeforeContent.html" />
     <Content Include="Templates\IndexBeforeHeader.html" />
@@ -159,9 +161,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="docs\" />
+    <Folder Include="blog\" />
     <Folder Include="Templates\Blogs\" />
-    <Folder Include="Templates\Forum\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -225,9 +225,9 @@ ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
     }
 
     ul#css3menu0 ul .submenu, ul#css3menu0 li > ul {
-        left: 25%;
-        right: auto;
-        top: 100%;
+        left: 20%;
+        top: 100px;
+        position: fixed;
         max-width: 300px;
     }
 
@@ -238,9 +238,7 @@ ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
         padding-right: 0;
         width: 100% !important;
     }
-}
 
-@media screen and (max-width: 715px) {
     ul#css3menu0 {
         width: 100%;
     }

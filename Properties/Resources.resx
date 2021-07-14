@@ -151,11 +151,17 @@
   <data name="IndexSidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\IndexSidebar.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="LoginAndNotifications" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Forum\LoginAndNotifications.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="messagescript" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Flowscript\messagescript.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="Navigation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Navigation.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="overall_header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Forum\overall_header.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Post.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>

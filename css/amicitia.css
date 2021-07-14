@@ -178,13 +178,6 @@ h1, h2, h3, h4, h5 {
     display: flex;
 }
 
-.wrap h1, .wrap h2, .wrap h3, .wrap h4, .wrap h5 {
-    color: rgba(var(--textinner),var(--opaque));
-    font-weight: bold;
-    font-variant: all-small-caps;
-    margin: var(--padding);
-}
-
 .wrap p {
     font-size: var(--size);
     margin: 2% 1% 2% 1%;
@@ -285,12 +278,6 @@ main > * {
     margin-left: var(--space-md);
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 .sidebar {
     width: 250%;
 }
@@ -332,6 +319,7 @@ main > * {
 
 .sidebar .component {
     max-height: 0;
+    width: 200px;
 }
 
 .visually-hidden {
@@ -899,6 +887,19 @@ input[type="button"]::-moz-focus-inner {
 	#site_disclaimer {
 		font-size: 8pt !important;
 	}
+
+    .header-profile .header-avatar .has-avatar {
+        position: relative;
+        left: 22px;
+        top: -8px;
+        display: initial;
+    }
+}
+@media (max-width: 600px) 
+{
+    .navbar {
+        display: none;
+    }
 }
 
 /* Scrollbars */

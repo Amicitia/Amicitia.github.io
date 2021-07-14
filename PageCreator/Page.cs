@@ -71,7 +71,7 @@ namespace Amicitia.github.io.PageCreator
             html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader 
                 + $"<center><a href=\"https://amicitia.github.io\"><img src=\"https://amicitia.github.io/images/logo.svg\" " +
                 $"style=\"width:150px;height:150px;\"><h1>{pageName}</h1></a></center>"
-                + Properties.Resources.IndexBeforeContent;
+                + Properties.Resources.IndexBeforeContent + "<b><a href=\"https://shrinefox.com/\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> > Resources > Browse Mods & Tools</b><br><br>.";
             // Update selected navigation value
             html = html.Replace("<div class=\"content\">", $"{Properties.Resources.Navigation}<div class=\"content\">");
             html = html.Replace($"value=\"{game.ToLower()}\">", $"value=\"{game.ToLower()}\" selected>").Replace($"value=\"{type}\">", $"value=\"{type}\" selected>");
@@ -162,6 +162,7 @@ namespace Amicitia.github.io.PageCreator
         {
             foreach (string page in new string[] { "404", "files" })
             {
+                Console.WriteLine($"Creating {page} page...");
                 string content = "";
                 content += Properties.Resources.IndexHeader;
                 content += Properties.Resources.IndexSidebar;
@@ -174,6 +175,17 @@ namespace Amicitia.github.io.PageCreator
                 content = content.Replace(">Amicitia Mods", $">Amicitia - {page}");
                 File.WriteAllText(Path.Combine(indexPath, page + ".html"), content);
             }
+            
+            string forumThemePath = Path.Combine(indexPath, "forum//styles//prolight//template");
+            // Overall Header
+            string header = Properties.Resources.overall_header;
+            header = header.Replace("<!--INDEXHEADER-->", Properties.Resources.IndexHeader.Replace("https://amicitia.github.io/", "https://shrinefox.com/"));
+            header = header.Replace("<!--INDEXAFTERHEADER-->", Properties.Resources.IndexAfterHeader.Replace("<!--Notifications-->", Properties.Resources.LoginAndNotifications).Replace("<i class=\"fa fa-user-circle\"></i>", "<!-- IF not S_USER_LOGGED_IN --><i class=\"fa fa-user-circle\"></i><!-- ELSE --><!-- IF CURRENT_USER_AVATAR --><a class=\"header-profile header-avatar has-avatar\">{CURRENT_USER_AVATAR}<strong class=\"badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->\">{NOTIFICATIONS_COUNT}</strong></a><!-- ELSE --><a class=\"header-profile header-avatar no-avatar\"><strong class=\"badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->\">{NOTIFICATIONS_COUNT}</strong></a><!-- ENDIF --><!-- ENDIF -->"));
+            header = header.Replace("<!--INDEXBEFORECONTENT-->", Properties.Resources.IndexBeforeContent);
+            header = header.Replace("</div>\r\n<!--Top End-->", "").Replace("</div> <!--End Contents-->", "").Replace("</div> <!--End Component-->","").Replace("</div> <!--End Sidebar-->","");
+            File.WriteAllText(Path.Combine(forumThemePath, "overall_header.html"), header);
+            // Overall Footer
+            File.WriteAllText(Path.Combine(forumThemePath, "overall_footer.html"), Properties.Resources.IndexFooter.Replace("<!--Footer-->", "</div>\n<!--Footer-->"));
         }
 
         public static void CreateHtml(List<Post> posts, string url)

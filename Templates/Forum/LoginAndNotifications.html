@@ -1,0 +1,26 @@
+<!-- IF S_NOTIFICATIONS_DISPLAY -->
+<a href="https://shrinefox.com/forum/ucp.php?i=ucp_notifications">
+	<div class="item">
+		<i class="icon fa-bell fa-fw" aria-hidden="true"></i>&nbsp;{L_NOTIFICATIONS}<strong id="navtoggle" class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong>
+	</div>
+</a>
+<!-- ENDIF -->
+<!-- IF U_ACP -->
+<a href="{U_ACP}" title="{L_ACP}" role="menuitem">
+	<div class="item">
+		<i class="icon fa-cogs fa-fw" aria-hidden="true"></i>&nbsp;{L_ACP_SHORT}
+	</div>
+</a>
+<!-- ENDIF -->
+<!-- IF U_MCP -->
+<a href="{U_MCP}" title="{L_MCP}" role="menuitem">
+	<div class="item">
+		<i class="icon fa-gavel fa-fw" aria-hidden="true"></i>&nbsp;{L_MCP_SHORT}
+	</div>
+</a>
+<!-- ENDIF -->
+<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
+	<div class="item">
+		<i class="icon fa-power-off fa-fw" aria-hidden="true"></i>&nbsp;{L_LOGIN_LOGOUT}
+	</div>
+</a>

@@ -176,13 +176,14 @@ namespace Amicitia.github.io.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to             &lt;!--Waves--&gt;
-        ///            &lt;div&gt;
-        ///                &lt;svg class=&quot;waves&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 24 150 28&quot; preserveAspectRatio=&quot;none&quot; shape-rendering=&quot;auto&quot;&gt;
-        ///                    &lt;defs&gt;
-        ///                        &lt;path id=&quot;gentle-wave&quot; d=&quot;M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z&quot;&gt;&lt;/path&gt;
-        ///                    &lt;/defs&gt;
-        ///                    &lt;g class=&quot;parallax&quot;&gt;
-        ///                        &lt;use xlink:href=&quot;#gentle [rest of string was truncated]&quot;;.
+        ///&lt;div&gt;
+        ///    &lt;svg class=&quot;waves&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 24 150 28&quot; preserveAspectRatio=&quot;none&quot; shape-rendering=&quot;auto&quot;&gt;
+        ///        &lt;defs&gt;
+        ///            &lt;path id=&quot;gentle-wave&quot; d=&quot;M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z&quot;&gt;&lt;/path&gt;
+        ///        &lt;/defs&gt;
+        ///        &lt;g class=&quot;parallax&quot;&gt;
+        ///            &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+        ///            &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;3&quot;&gt; [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexBeforeContent {
             get {
@@ -201,11 +202,11 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 								&lt;/td&gt;
+        ///   Looks up a localized string similar to 								&lt;!--Pagination--&gt;
+        ///                                &lt;/td&gt;
         ///							&lt;/tr&gt;
         ///						&lt;/table&gt;
         ///					&lt;/div&gt;
-        ///                &lt;!--Pagination--&gt;
         ///                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
         ///                &lt;!--Footer--&gt;
         ///                &lt;div class=&quot;row bottom&quot;&gt;
@@ -214,7 +215,7 @@ namespace Amicitia.github.io.Properties {
         ///                            &lt;tbody&gt;
         ///                                &lt;tr&gt;
         ///                                    &lt;td id=&quot;about_site&quot; style=&quot;vertical-align: top;width: 25%;&quot;&gt;
-        ///                                        [rest of string was truncated]&quot;;.
+        ///                        [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexFooter {
             get {
@@ -259,6 +260,22 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;!-- IF S_NOTIFICATIONS_DISPLAY --&gt;
+        ///									&lt;li&gt;
+        ///										&lt;div class=&quot;text&quot;&gt;
+        ///											&lt;div class=&quot;toggle-title&quot;&gt;
+        ///												&lt;a class=&quot;item&quot;&gt;&lt;i class=&quot;icon fa-bell fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span&gt;{L_NOTIFICATIONS}&lt;/span&gt;&lt;strong class=&quot;badge&lt;!-- IF not NOTIFICATIONS_COUNT --&gt; hidden&lt;!-- ENDIF --&gt;&quot;&gt;{NOTIFICATIONS_COUNT}&lt;/strong&gt;&lt;/a&gt;&lt;/div&gt;
+        ///											&lt;div class=&quot;toggle-inner&quot; style=&quot;display: none;&quot;&gt;
+        ///												&lt;div class=&quot;dropdown-containers&quot;&gt;
+        ///													&lt;!-- INCLUDE notification_dropdown.htm [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string LoginAndNotifications {
+            get {
+                return ResourceManager.GetString("LoginAndNotifications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
         ///	&lt;table&gt;
         ///        &lt;tr&gt;
@@ -279,16 +296,16 @@ namespace Amicitia.github.io.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;div class=&quot;wrap&quot;&gt;
-        ///    &lt;table id=&quot;wrap&quot;&gt;
+        ///    &lt;table id=&quot;wrap&quot; style=&quot;width: 150%;&quot;&gt;
         ///        &lt;tbody&gt;
         ///            &lt;tr&gt;
         ///                &lt;td style=&quot;width: 100%; display: inline-flex;&quot;&gt;
         ///                    Game: 
         ///                    &lt;select id=&quot;game&quot; name=&quot;game&quot; onchange=&quot;navigate()&quot; style=&quot;width: 50%;flex-grow: 100;&quot;&gt;
-        ///                        &lt;option value=&quot;All&quot;&gt;Game&lt;/option&gt;
-        ///                        &lt;option value=&quot;P5&quot;&gt;Persona 5&lt;/option&gt;
-        ///                        &lt;option value=&quot;P5R&quot;&gt;Persona 5 Royal&lt;/option&gt;
-        ///                        &lt;option value=&quot;P [rest of string was truncated]&quot;;.
+        ///                        &lt;option value=&quot;All&quot;&gt;&lt;/option&gt;
+        ///                        &lt;option value=&quot;p5&quot;&gt;Persona 5&lt;/option&gt;
+        ///                        &lt;option value=&quot;p5r&quot;&gt;Persona 5 Royal&lt;/option&gt;
+        ///                        [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Navigation {
             get {
@@ -297,15 +314,43 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to     &lt;div class=&quot;card&quot;&gt;
-        ///        &lt;div class=&quot;text&quot;&gt;
-        ///            &lt;div class=&quot;toggle-title&quot;&gt;
-        ///                &lt;a href=&quot;POSTID&quot;&gt;&lt;div class=&quot;getlink&quot; style=&quot;float: left; z-index: 999;&quot;&gt;&lt;i class=&quot;fas fa-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/a&gt;
-        ///                &lt;a href=&quot;POSTMEDIAURL&quot;&gt;&lt;div class=&quot;getlink&quot; style=&quot;float:right; z-index: 999;&quot;&gt;&lt;i class=&quot;fas fa-eye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/a&gt;
-        ///                POSTEMBED
-        ///                &lt;div class=&quot;card__body&quot;&gt;
-        ///                    &lt;h3&gt;
-        ///                        &lt;a [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;!-- INCLUDE config.html --&gt;
+        ///&lt;!DOCTYPE html&gt;
+        ///&lt;html dir=&quot;{S_CONTENT_DIRECTION}&quot; lang=&quot;{S_USER_LANG}&quot;&gt;
+        ///&lt;head&gt;
+        ///&lt;meta charset=&quot;utf-8&quot; /&gt;
+        ///&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        ///&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+        ///{META}
+        ///&lt;title&gt;&lt;!-- IF UNREAD_NOTIFICATIONS_COUNT --&gt;({UNREAD_NOTIFICATIONS_COUNT}) &lt;!-- ENDIF --&gt;&lt;!-- IF not S_VIEWTOPIC and not S_VIEWFORUM --&gt;{SITENAME} - &lt;!-- ENDIF --&gt;&lt;!-- IF S_IN_MCP --&gt;{L_MCP} - &lt;!-- ELSEIF S_IN_UCP --&gt;{L_UCP} - &lt;!-- ENDIF --&gt;{PAGE [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string overall_header {
+            get {
+                return ResourceManager.GetString("overall_header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;div class=&quot;toggle&quot;&gt;
+        ///    &lt;div class=&quot;toggle-title&quot;&gt;
+        ///        &lt;table cellspacing=&quot;0&quot;&gt;
+        ///            &lt;tr class=&quot;post&quot;&gt;
+        ///                &lt;td&gt;
+        ///                    POSTEMBED
+        ///                &lt;/td&gt;
+        ///                &lt;td&gt;
+        ///                    &lt;b&gt;POSTTITLE&lt;/b&gt;
+        ///                &lt;/td&gt;
+        ///                &lt;td&gt;
+        ///                    POSTTYPE
+        ///                &lt;/td&gt;
+        ///                &lt;td&gt;
+        ///                    POSTAUTHORS
+        ///                &lt;/td&gt;
+        ///                &lt;td&gt;
+        ///                    POSTDATE
+        ///                &lt;/td&gt;
+        ///        [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Post {
             get {
@@ -319,13 +364,17 @@ namespace Amicitia.github.io.Properties {
         ///    &lt;tbody&gt;
         ///        &lt;tr&gt;
         ///            &lt;td width=&quot;25%&quot;&gt;Page 0/0 (0 results)&lt;/td&gt;
-        ///            &lt;td width=&quot;50%&quot;&gt;&lt;!--Pagination--&gt;&lt;/td&gt;
-        ///            &lt;td width=&quot;25%&quot; style=&quot;text-align: right;&quot;&gt;
+        ///            &lt;td width=&quot;50%&quot; style=&quot;text-align: right;&quot;&gt;
         ///                &lt;a href=&quot;https://shrinefox.com/forum/viewtopic.php?f=4&amp;amp;t=682&amp;amp;p=2649#p2649&quot;&gt;
         ///                    &lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; How to Submit
         ///                &lt;/a&gt;
         ///            &lt;/td&gt;
-        ///        &lt;/tr&gt;        /// [rest of string was truncated]&quot;;.
+        ///        &lt;/tr&gt;
+        ///    &lt;/tbody&gt;
+        ///&lt;/table&gt;
+        ///&lt;!--Pagination--&gt;
+        ///&lt;br&gt;
+        ///&lt;! [rest of string was truncated]&quot;;.
         /// </summary>
         public static string PostTableHeader {
             get {
