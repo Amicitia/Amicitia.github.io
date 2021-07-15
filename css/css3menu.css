@@ -33,7 +33,7 @@ ul#css3menu0 ul {
     box-shadow: rgb(0 0 0 / 30%) 0px 2px 9px 3px
 }
 
-ul#css3menu0 li:hover > * {
+ul#css3menu0 .toproot:hover > * {
     display: block;
 }
 
@@ -48,9 +48,14 @@ ul#css3menu0 li {
     border-bottom: 5px solid transparent;
 }
 
-ul#css3menu0 li:hover {
+ul#css3menu0 .toproot:hover {
     z-index: 1;
     border-bottom: 5px solid rgba(var(--text), var(--opaque));
+}
+
+ul#css3menu0 .toproot ul li:hover, .item:hover {
+    z-index: 1;
+    background: rgba(var(--hover), var(--opaque));
 }
 
 ul#css3menu0 {
@@ -166,7 +171,7 @@ ul#css3menu0 > li.switch:hover:before {
     display: none;
 }
 
-ul#css3menu0 li:hover > a, ul#css3menu0 li > a.pressed {
+ul#css3menu0 .toproot:hover > a, ul#css3menu0 li > a.pressed {
     background-color: transparent;
     border-style: none;
     color: rgba(var(--text), var(--opaque));
@@ -277,7 +282,7 @@ ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
         bottom: 0;
     }
 
-    ul#css3menu0 li:hover {
+    ul#css3menu0 .toproot:hover {
         border-bottom: 5px solid transparent !important;
     }
 }
