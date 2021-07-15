@@ -123,6 +123,8 @@
     <Content Include="js\jscolor.js" />
     <Content Include="js\navigation.js" />
     <Content Include="js\showhide.js" />
+    <Content Include="Templates\Blogs\footer.php" />
+    <Content Include="Templates\Blogs\header.php" />
     <Content Include="Templates\Flowscript\compiling.html" />
     <Content Include="Templates\Flowscript\decompiling.html" />
     <Content Include="Templates\Flowscript\flowscript.html" />
@@ -165,7 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="blog\" />
-    <Folder Include="Templates\Blogs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -130,6 +130,12 @@
   <data name="flowscript" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Flowscript\flowscript.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="footer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Blogs\footer.php;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Blogs\header.php;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="hookingfunctions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Flowscript\hookingfunctions.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>

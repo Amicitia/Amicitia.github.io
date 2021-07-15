@@ -1,13 +1,22 @@
-<!-- INCLUDE config.html -->
-<!DOCTYPE html>
-<html dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}">
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Justread
+ */
+
+?>
+<!doctype html>
+<html class="no-js" <?php language_attributes(); ?>>
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-{META}
-<title><!-- IF UNREAD_NOTIFICATIONS_COUNT -->({UNREAD_NOTIFICATIONS_COUNT}) <!-- ENDIF --><!-- IF not S_VIEWTOPIC and not S_VIEWFORUM -->{SITENAME} - <!-- ENDIF --><!-- IF S_IN_MCP -->{L_MCP} - <!-- ELSEIF S_IN_UCP -->{L_UCP} - <!-- ENDIF -->{PAGE_TITLE}<!-- IF S_VIEWTOPIC or S_VIEWFORUM --> - {SITENAME}<!-- ENDIF --></title>
-<script src="https://shrinefox.com/js/jquery-3.3.1.min.js"></script>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script src="https://shrinefox.com/js/jquery-3.3.1.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
 <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -21,73 +30,7 @@
 <script type="text/javascript" src="https://shrinefox.com/js/jscolor.js"></script>
 <link rel="stylesheet" href="https://shrinefox.com/css/css3menu.css" type="text/css" />
 <style type="text/css">._css3m {display: none;}</style>
-<!-- IF S_ENABLE_FEEDS -->
-	<!-- IF S_ENABLE_FEEDS_OVERALL --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{{ path('phpbb_feed_index') }}"><!-- ENDIF -->
-	<!-- IF S_ENABLE_FEEDS_NEWS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{{ path('phpbb_feed_news') }}"><!-- ENDIF -->
-	<!-- IF S_ENABLE_FEEDS_FORUMS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_ALL_FORUMS}" href="{{ path('phpbb_feed_forums') }}"><!-- ENDIF -->
-	<!-- IF S_ENABLE_FEEDS_TOPICS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_TOPICS_NEW}" href="{{ path('phpbb_feed_topics') }}"><!-- ENDIF -->
-	<!-- IF S_ENABLE_FEEDS_TOPICS_ACTIVE --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_TOPICS_ACTIVE}" href="{{ path('phpbb_feed_topics_active') }}"><!-- ENDIF -->
-	<!-- IF S_ENABLE_FEEDS_FORUM and S_FORUM_ID --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FORUM} - {FORUM_NAME}" href="{{ path('phpbb_feed_forum', { forum_id : S_FORUM_ID } ) }}"><!-- ENDIF -->
-	<!-- IF S_ENABLE_FEEDS_TOPIC and S_TOPIC_ID --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_TOPIC} - {TOPIC_TITLE}" href="{{ path('phpbb_feed_topic', { topic_id : S_TOPIC_ID } ) }}"><!-- ENDIF -->
-	<!-- EVENT overall_header_feeds -->
-<!-- ENDIF -->
-
-<!-- IF U_CANONICAL -->
-	<link rel="canonical" href="{U_CANONICAL}">
-<!-- ENDIF -->
-
-<!--
-	phpBB style name: ProLight
-	Based on style:   prosilver (this is the default phpBB3 style)
-	Original author:  Tom Beddard ( http://www.subBlue.com/ )
-	Modified by:      Ian Bradley ( http://phpbbstyles.oo.gd/ )
--->
-
-<!-- IF S_ALLOW_CDN -->
-<script>
-	WebFontConfig = {
-		google: {
-			families: ['Oxygen:400,700&subset=latin-ext']
-		}
-	};
-
-	(function(d) {
-		var wf = d.createElement('script'), s = d.scripts[0];
-		wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-		wf.async = true;
-		s.parentNode.insertBefore(wf, s);
-	})(document);
-</script>
-<!-- ENDIF -->
-<link href="{T_FONT_AWESOME_LINK}" rel="stylesheet">
-<link href="{T_STYLESHEET_LINK}" rel="stylesheet">
-
-<!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
-	<link href="{T_THEME_PATH}/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
-<!-- ENDIF -->
-
-<!-- IF S_PLUPLOAD -->
-	<link href="{T_THEME_PATH}/plupload.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
-<!-- ENDIF -->
-
-<!-- IF S_COOKIE_NOTICE -->
-	<link href="{T_ASSETS_PATH}/cookieconsent/cookieconsent.min.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
-<!-- ENDIF -->
-
-<!--[if lte IE 9]>
-	<link href="{T_THEME_PATH}/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
-<![endif]-->
-
-<!-- IF $ROUND_AVATARS -->
-	<link href="{T_THEME_PATH}/round_avatars.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
-<!-- ENDIF -->
-
-<!-- EVENT overall_header_head_append -->
-
-{$STYLESHEETS}
-
-<!-- EVENT overall_header_stylesheets_after -->
-
+	<?php wp_head(); ?>
 </head>
 <body style="background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;">
     <!--Copied Message-->
@@ -122,47 +65,14 @@
                     </li>
                     <li class="toproot" style="margin-left: 10px; position: relative;">
                         <a id="sidebartoggle">
-                            <!-- IF not S_USER_LOGGED_IN --><i class="fa fa-user-circle"></i><!-- ELSE --><!-- IF CURRENT_USER_AVATAR --><a class="header-profile header-avatar has-avatar">{CURRENT_USER_AVATAR}<strong class="badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong><span style="left:26px;position:relative;margin-right:20px;top:-5px;">Profile </span></a><!-- ELSE --><a class="header-profile header-avatar no-avatar"><strong class="badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong></a><!-- ENDIF --><!-- ENDIF -->
+                            <i class="fa fa-user-circle"></i> Profile
                         </a>
                         <ul style="padding: 0 !important; -webkit-box-shadow: none !important; box-shadow: none !important; ">
                             <div>
                                 <div class="sidebar">
                                     <div class="component">
                                         <div class="contents">
-                                            <!-- IF S_NOTIFICATIONS_DISPLAY -->
-<li>
-	<a href="https://shrinefox.com/forum/ucp.php?i=ucp_notifications">
-		<div class="item">
-			<i class="icon fa-bell fa-fw" aria-hidden="true"></i>&nbsp;{L_NOTIFICATIONS}<strong id="navtoggle" class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong>
-		</div>
-	</a>
-</li>
-<!-- ENDIF -->
-<!-- IF U_ACP -->
-<li>
-	<a href="{U_ACP}" title="{L_ACP}" role="menuitem">
-		<div class="item">
-			<i class="icon fa-cogs fa-fw" aria-hidden="true"></i>&nbsp;{L_ACP_SHORT}
-		</div>
-	</a>
-</li>
-<!-- ENDIF -->
-<!-- IF U_MCP -->
-<li>
-	<a href="{U_MCP}" title="{L_MCP}" role="menuitem">
-		<div class="item">
-			<i class="icon fa-gavel fa-fw" aria-hidden="true"></i>&nbsp;{L_MCP_SHORT}
-		</div>
-	</a>
-</li>
-<!-- ENDIF -->
-<li>
-	<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
-		<div class="item">
-			<i class="icon fa-power-off fa-fw" aria-hidden="true"></i>&nbsp;{L_LOGIN_LOGOUT}
-		</div>
-	</a>
-</li>
+                                            <!--Notifications-->
                                             <li>
                                                 <a href="https://shrinefox.com/forum/ucp.php">
                                                     <div class="item">
@@ -231,8 +141,8 @@
 <center>
 	<a href="https://shrinefox.com/forum">
 		<img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;">
-		<br><h1>ShrineFox</h1>
-		<h2>Blog</h2>
+		<br><h1>Amicitia</h1>
+		<h2>News</h2>
 	</a>
 </center>
 </div>
@@ -258,28 +168,75 @@
 <div class="row middle">
     <!--Page Body-->
     <div class="content">
-        <div class="wrap">
+        <div class="">
             <!--Main Page Content-->
-            <table id="wrap">
+            <table id="">
                 <tr>
                     <td style="vertical-align:top;">
                         
-<table style="padding: 0 20px 0 15px;">
-    <tbody>
-        <tr>
-	<a id="top" class="top-anchor" accesskey="t"></a>
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'justread' ); ?></a>
 
-	<!-- EVENT overall_header_page_body_before -->
+	<div class="form-wrapper" id="form-wrapper">
+		<button
+			class="search-close" id="search-close"
+			<?php if ( justread_is_amp() ) : ?>
+				on="tap:form-wrapper.toggleClass( class='is-visible', force=false )"
+			<?php endif; ?>
+		>&times;</button>
+		<?php get_search_form(); ?>
+	</div>
 
-	<a id="start_here" class="anchor"></a>
-	<div id="page-body" class="page-body" role="main">
-		<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
-		<div id="information" class="rules">
-			<div class="inner">
-				<strong>{L_INFORMATION}{L_COLON}</strong> {L_BOARD_DISABLED}
-			</div>
+	<header id="masthead" class="site-header">
+		<div class="navbar">
+			<div class="site-branding">
+				<?php
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+				else :
+					?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php
+				endif;
+
+				$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo wp_kses_post( $description ); ?></p>
+				<?php endif; ?>
+			</div><!-- .site-branding -->
+
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'menu_class'     => 'menu',
+						'container'      => '',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
 		</div>
-		<!-- ENDIF -->
+		<div class="social-icons">
+			<?php
+			if ( function_exists( 'jetpack_social_menu' ) ) {
+				jetpack_social_menu();
+			}
+			?>
+			<button
+				class="search-toggle" aria-controls="form-wrapper" aria-expanded="false"
+				<?php if ( justread_is_amp() ) : ?>
+					on="tap:form-wrapper.toggleClass( class='is-visible' )"
+				<?php endif; ?>
+			><?php echo justread_get_svg( array( 'icon' => 'search' ) ); // wpcs xss: ok. ?></button>
+			<button id="site-navigation-open" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'justread' ); ?></button>
+		</div>
+	</header><!-- #masthead -->
 
-		<!-- EVENT overall_header_content_before -->
-		<!-- INCLUDE navbar_header.html -->
+	<div id="content" class="site-content">

@@ -189,6 +189,25 @@ namespace Amicitia.github.io.PageCreator
             File.WriteAllText(Path.Combine(forumThemePath, "overall_header.html"), header);
             // Overall Footer
             File.WriteAllText(Path.Combine(forumThemePath, "overall_footer.html"), Properties.Resources.IndexFooter.Replace("<!--Footer-->", "</div>\n<!--Footer-->"));
+
+            string blogThemePath = Path.Combine(indexPath, "blog//wp-content//themes//justread");
+            foreach (string site in new string[] { "blog", "guides", "news" })
+            {
+                string path = blogThemePath + "//" + site;
+
+                // Overall Header
+                header = Properties.Resources.header;
+                header = header.Replace("<!--INDEXHEADER-->", Properties.Resources.IndexHeader.Replace("https://amicitia.github.io/", "https://shrinefox.com/"));
+                header = header.Replace("<!--INDEXAFTERHEADER-->", Properties.Resources.IndexAfterHeader);
+                header = header.Replace("<!--INDEXBEFORECONTENT-->", Properties.Resources.IndexBeforeContent);
+                header = header.Replace("=\"wrap\"", "=\"\"");
+                if (site != "blog")
+                    header = header.Replace("<h1>ShrineFox</h1>", "<h1>Amicitia</h1>").Replace("<h2>Blog</h2>", $"<h2>{FirstCharToUpper(site)}</h2>");
+                header = header.Replace("</div>\r\n<!--Top End-->", "").Replace("</div> <!--End Contents-->", "").Replace("</div> <!--End Component-->", "").Replace("</div> <!--End Sidebar-->", "");
+                File.WriteAllText(Path.Combine(path, "header.php"), header);
+                // Overall Footer
+                File.WriteAllText(Path.Combine(path, "footer.php"), Properties.Resources.IndexSidebar + Properties.Resources.IndexFooter.Replace("<!--INDEXFOOTER-->", Properties.Resources.IndexFooter));
+            }
         }
 
         public static void CreateHtml(List<Post> posts, string url)

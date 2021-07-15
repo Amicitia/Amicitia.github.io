@@ -70,14 +70,12 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 			&lt;/td&gt;
-        ///			&lt;td style=&quot;width: 75%; padding-right:20px; vertical-align: top;&quot;&gt;
-        ///				&lt;div class=&quot;content-outer&quot;&gt;
-        ///                    &lt;div class=&quot;content&quot;&gt;
-        ///						&lt;h1&gt;Compiling&lt;/h1&gt;
+        ///   Looks up a localized string similar to &lt;h1&gt;Compiling&lt;/h1&gt;
         ///&lt;br&gt;Using &lt;b&gt;AtlusScriptCompiler&lt;/b&gt;, you can turn &lt;b&gt;.flow&lt;/b&gt; files into &lt;b&gt;.bf&lt;/b&gt; files, or &lt;b&gt;.msg&lt;/b&gt; files into &lt;b&gt;.bmd&lt;/b&gt; files. Anything else referenced in a .flow (bf/bmd/flow/msg) also becomes part of a resulting .bf file.
         ///&lt;br /&gt;
-        ///&lt;br /&gt;You can &lt;a href=&quot;https://shrinefox.com?tool=atlusscriptcompiler&quot;&gt;download the la [rest of string was truncated]&quot;;.
+        ///&lt;br /&gt;You can &lt;a href=&quot;https://shrinefox.com?tool=atlusscriptcompiler&quot;&gt;download the latest AtlusScriptCompiler here&lt;/a&gt;.
+        ///&lt;h2&gt;Using Commandline Arguments&lt;/h2&gt;
+        ///Once you have extracted the program to a folder, simply clicking on the exe causes a con [rest of string was truncated]&quot;;.
         /// </summary>
         public static string compiling {
             get {
@@ -86,17 +84,10 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
-        ///	&lt;table&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
-        ///                &lt;div class=&quot;content-outer&quot;&gt;
-        ///                    &lt;div class=&quot;content&quot;&gt;&lt;br&gt;
-        ///						Basics
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amiciti [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;h1&gt;Decompiling&lt;/h1&gt;&lt;br&gt;Using &lt;b&gt;AtlusScriptCompiler&lt;/b&gt;, you can turn &lt;b&gt;.bf&lt;/b&gt; files into &lt;b&gt;.flow&lt;/b&gt; files, or &lt;b&gt;.bmd&lt;/b&gt; files into &lt;b&gt;.msg&lt;/b&gt; files. Any .bmd contained in a .bf will also be automatically decompiled and output as a .msg file.
+        ///						&lt;br /&gt;&lt;br /&gt;You can &lt;a href=&quot;https://shrinefox.com?tool=atlusscriptcompiler&quot;&gt;download the latest AtlusScriptCompiler here&lt;/a&gt;.
+        ///						&lt;h2&gt;Using Commandline Arguments&lt;/h2&gt;
+        ///						Once you have extracted the program to a folder, simply clicking on the exe  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string decompiling {
             get {
@@ -105,23 +96,23 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;br&gt;&lt;br&gt;If you need dumped CPK or CVM contents for modding purposes,
+        ///   Looks up a localized string similar to &lt;br&gt;
+        ///&lt;br&gt;If you need dumped CPK or CVM contents for modding purposes,
         ///&lt;br&gt;check the links below to download what you need.
         ///&lt;br&gt;
         ///&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; Files necessary to actually run the games are &lt;b&gt;not included&lt;/b&gt;.
         ///&lt;br&gt;These are provided for research and development purposes only.
         ///&lt;br&gt;
+        ///&lt;br&gt;Some links were removed from this page because the files are no longer available.
+        ///&lt;br&gt;
+        ///&lt;br&gt;
+        ///&lt;center&gt;&lt;h1&gt;Persona&lt;/h1&gt;&lt;/center&gt;
+        ///&lt;hr&gt;
         ///&lt;br&gt;
         ///&lt;table&gt;
         ///    &lt;tbody&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td&gt;&lt;b&gt;Game&lt;/b&gt;&lt;/td&gt;
-        ///            &lt;td&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/td&gt;
-        ///            &lt;td&gt;&lt;b&gt;Links&lt;/b&gt;&lt;/td&gt;
-        ///        &lt;/tr&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td&gt;Persona 3 FES&lt;/td&gt;
-        ///          [rest of string was truncated]&quot;;.
+        ///        &lt;tr style=&quot;opacity:0.5;&quot;&gt;
+        ///            &lt;td&gt;&lt;b [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Files {
             get {
@@ -130,17 +121,11 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
-        ///	&lt;table&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
-        ///                &lt;div class=&quot;content-outer&quot;&gt;
-        ///                    &lt;div class=&quot;content&quot;&gt;&lt;br&gt;
-        ///						Basics
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amiciti [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;h1&gt;Flowscript&lt;/h1&gt;
+        ///&lt;br&gt;&lt;b&gt;Flowscript&lt;/b&gt; is a scripting language created by &lt;b&gt;TGEnigma&lt;/b&gt; for use with his &lt;a href=&quot;https://shrinefox.com/?tool=atlusscriptcompiler&quot;&gt;AtlusScriptCompiler&lt;/a&gt;. It is the decompiled form of &lt;b&gt;BF&lt;/b&gt;, the binary output of Atlus&apos;s scripts which many of their games use to perform various logical procedures.
+        ///&lt;br&gt;
+        ///&lt;h2&gt;Decompiling&lt;/h2&gt;
+        ///						You can convert &lt;b&gt;.BF&lt;/b&gt; to &lt;b&gt;.FLOW&lt;/b&gt; and open it with your text editor of choice &lt;a href=&quot;https://amicitia.github.io/docs/decompili [rest of string was truncated]&quot;;.
         /// </summary>
         public static string flowscript {
             get {
@@ -149,17 +134,59 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
-        ///	&lt;table&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
-        ///                &lt;div class=&quot;content-outer&quot;&gt;
-        ///                    &lt;div class=&quot;content&quot;&gt;&lt;br&gt;
-        ///						Basics
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amiciti [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;?php
+        ////**
+        /// * The template for displaying the footer
+        /// *
+        /// * Contains the closing of the #content div and all content after.
+        /// *
+        /// * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+        /// *
+        /// * @package Justread
+        /// */
+        ///
+        ///?&gt;
+        ///
+        ///	&lt;/div&gt;&lt;!-- #content --&gt;
+        ///			&lt;!--INDEXFOOTER--&gt;.
+        /// </summary>
+        public static string footer {
+            get {
+                return ResourceManager.GetString("footer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?php
+        ////**
+        /// * The header for our theme
+        /// *
+        /// * This is the template that displays all of the &lt;head&gt; section and everything up until &lt;div id=&quot;content&quot;&gt;
+        /// *
+        /// * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+        /// *
+        /// * @package Justread
+        /// */
+        ///
+        ///?&gt;
+        ///&lt;!doctype html&gt;
+        ///&lt;html class=&quot;no-js&quot; &lt;?php language_attributes(); ?&gt;&gt;
+        ///&lt;head&gt;
+        ///	&lt;meta charset=&quot;&lt;?php bloginfo( &apos;charset&apos; ); ?&gt;&quot;&gt;
+        ///	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        ///	&lt;link rel=&quot;profile&quot; href=&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string header {
+            get {
+                return ResourceManager.GetString("header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;h1&gt;Hooking Functions&lt;/h1&gt;
+        ///						AtlusScriptCompiler is not perfect, and sometimes decompiled data is imprecise (usually float values). This can lead to glitches (weird camera/player positioning and movement) and even crashes in-game when a recompiled script is modded back in.
+        ///&lt;br /&gt;To get around this, AtlusScriptCompiler has a feature that preserves the original .BF&apos;s data, appending only new data to the end from your compiled .FLOW.
+        ///&lt;br /&gt;You can use this to &lt;b&gt;replace the contents of a specific method [rest of string was truncated]&quot;;.
         /// </summary>
         public static string hookingfunctions {
             get {
@@ -168,17 +195,11 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
-        ///	&lt;table&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
-        ///                &lt;div class=&quot;content-outer&quot;&gt;
-        ///                    &lt;div class=&quot;content&quot;&gt;&lt;br&gt;
-        ///						Basics
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amiciti [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;h1&gt;Importing&lt;/h1&gt;
+        ///						As seen in the &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt; tutorial, in order to use text strings in a .flow, you must reference a .msg file to get the strings from.
+        ///&lt;br /&gt;An &quot;import statement&quot; usually looks like the following, at the top of the document:
+        ///&lt;br /&gt;&lt;pre&gt;&lt;code&gt;import( &quot;field.msg&quot; );&lt;/code&gt;&lt;/pre&gt;
+        ///&lt;br /&gt;The paths are relative to the .flow file, so in this case, if your .flow is at &lt;b&gt;C:\Users\Username\Documents\field.flow&lt;/b&gt;, it would loo [rest of string was truncated]&quot;;.
         /// </summary>
         public static string importing {
             get {
@@ -291,16 +312,19 @@ namespace Amicitia.github.io.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;!-- IF S_NOTIFICATIONS_DISPLAY --&gt;
-        ///&lt;a href=&quot;https://shrinefox.com/forum/ucp.php?i=ucp_notifications&quot;&gt;
-        ///	&lt;div class=&quot;item&quot;&gt;
-        ///		&lt;i class=&quot;icon fa-bell fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;{L_NOTIFICATIONS}&lt;strong id=&quot;navtoggle&quot; class=&quot;badge&lt;!-- IF not NOTIFICATIONS_COUNT --&gt; hidden&lt;!-- ENDIF --&gt;&quot;&gt;{NOTIFICATIONS_COUNT}&lt;/strong&gt;
-        ///	&lt;/div&gt;
-        ///&lt;/a&gt;
+        ///&lt;li&gt;
+        ///	&lt;a href=&quot;https://shrinefox.com/forum/ucp.php?i=ucp_notifications&quot;&gt;
+        ///		&lt;div class=&quot;item&quot;&gt;
+        ///			&lt;i class=&quot;icon fa-bell fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;{L_NOTIFICATIONS}&lt;strong id=&quot;navtoggle&quot; class=&quot;badge&lt;!-- IF not NOTIFICATIONS_COUNT --&gt; hidden&lt;!-- ENDIF --&gt;&quot;&gt;{NOTIFICATIONS_COUNT}&lt;/strong&gt;
+        ///		&lt;/div&gt;
+        ///	&lt;/a&gt;
+        ///&lt;/li&gt;
         ///&lt;!-- ENDIF --&gt;
         ///&lt;!-- IF U_ACP --&gt;
-        ///&lt;a href=&quot;{U_ACP}&quot; title=&quot;{L_ACP}&quot; role=&quot;menuitem&quot;&gt;
-        ///	&lt;div class=&quot;item&quot;&gt;
-        ///		&lt;i class=&quot;icon fa-cogs fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp [rest of string was truncated]&quot;;.
+        ///&lt;li&gt;
+        ///	&lt;a href=&quot;{U_ACP}&quot; title=&quot;{L_ACP}&quot; role=&quot;menuitem&quot;&gt;
+        ///		&lt;div class=&quot;item&quot;&gt;
+        ///			&lt;i class=&quot;icon fa-cogs fa-fw&quot; a [rest of string was truncated]&quot;;.
         /// </summary>
         public static string LoginAndNotifications {
             get {
@@ -309,17 +333,9 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
-        ///	&lt;table&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
-        ///                &lt;div class=&quot;content-outer&quot;&gt;
-        ///                    &lt;div class=&quot;content&quot;&gt;&lt;br&gt;
-        ///						Basics
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amiciti [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;h1&gt;Messagescript&lt;/h1&gt;&lt;i&gt;Flowscript&lt;/i&gt; doesn&apos;t support &lt;a href=&quot;https://techterms.com/definition/string&quot;&gt;strings&lt;/a&gt; as a variable type, but it&apos;s possible to display text in the form of dialog and selectable options by referencing a &lt;b&gt;messagescript&lt;/b&gt; file.
+        ///&lt;h2&gt;Creating a Messagescript&lt;/h2&gt;
+        ///						Messagescripts are text files ending with the extension .&lt;b&gt;msg&lt;/b&gt;, often accompanying a .&lt;i&gt;flow&lt;/i&gt; (&lt;i&gt;flowscript&lt;/i&gt;). Simply create a new text file and rename the extension. You may need to &lt;a href=&quot;http [rest of string was truncated]&quot;;.
         /// </summary>
         public static string messagescript {
             get {
@@ -416,17 +432,17 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Basics
-        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
-        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
-        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/compiling&quot;&gt;Compiling&lt;/a&gt;
-        ///&lt;br&gt;
-        ///&lt;br&gt;Features
-        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/importing&quot;&gt;Importing&lt;/a&gt;
-        ///&lt;br&gt;↳ Declaring Functions
-        ///&lt;br&gt;↳ Declaring Variables
-        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/hook [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;table&gt;
+        ///    &lt;tr&gt;
+        ///        &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
+        ///            Basics
+        ///            &lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
+        ///            &lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
+        ///            &lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
+        ///            &lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/compiling&quot;&gt;Compiling&lt;/a&gt;
+        ///            &lt;br&gt;
+        ///            &lt;br&gt;Features
+        ///            &lt;br&gt;↳ &lt;a h [rest of string was truncated]&quot;;.
         /// </summary>
         public static string toc {
             get {
