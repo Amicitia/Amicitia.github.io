@@ -121,7 +121,9 @@
                         </ul>
                     </li>
                     <li class="toproot" style="margin-left: 10px; position: relative;">
-                        <a id="sidebartoggle" style="height:20px;"><span><!-- IF not S_USER_LOGGED_IN --><i class="fa fa-user-circle"></i><!-- ELSE --><!-- IF CURRENT_USER_AVATAR --><a class="header-profile header-avatar has-avatar">{CURRENT_USER_AVATAR}<strong class="badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong></a><!-- ELSE --><a class="header-profile header-avatar no-avatar"><strong class="badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong></a><!-- ENDIF --><!-- ENDIF --> <span style="left:26px;position:relative;margin-right:20px;">Profile <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></span></a>
+                        <a id="sidebartoggle">
+                            <!-- IF not S_USER_LOGGED_IN --><i class="fa fa-user-circle"></i><!-- ELSE --><!-- IF CURRENT_USER_AVATAR --><a class="header-profile header-avatar has-avatar">{CURRENT_USER_AVATAR}<strong class="badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong><span style="left:26px;position:relative;margin-right:20px;top:-5px;">Profile </span></a><!-- ELSE --><a class="header-profile header-avatar no-avatar"><strong class="badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong></a><!-- ENDIF --><!-- ENDIF -->
+                        </a>
                         <ul style="padding: 0 !important; -webkit-box-shadow: none !important; box-shadow: none !important; ">
                             <div>
                                 <div class="sidebar">
