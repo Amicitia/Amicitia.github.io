@@ -147,6 +147,10 @@ h1, h2, h3, h4, h5 {
     background: var(--highlight2);
 }
 
+#wrap hr {
+    color: rgba(var(--textinner), var(--opaque));
+}
+
 /* Header */
 
 .header {
@@ -381,14 +385,6 @@ main > * {
     color: rgba(var(--text), var(--alpha));
 }
 
-.item {
-    border-bottom: 5px solid transparent;
-}
-
-.item:active {
-    transform: translateY(1px);
-}
-
 .item > * {
     pointer-events: none;
 }
@@ -457,10 +453,6 @@ ul.items.list a {
 .list .thumbnail {
     --size: 50px;
     font-size: 30pt;
-}
-
-.item:hover {
-    border-bottom: 5px solid rgba(var(--text), var(--opaque));
 }
 
 .button:active {

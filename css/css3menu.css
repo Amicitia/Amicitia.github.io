@@ -53,7 +53,7 @@ ul#css3menu0 .toproot:hover {
     border-bottom: 5px solid rgba(var(--text), var(--opaque));
 }
 
-ul#css3menu0 .toproot ul li:hover, .item:hover {
+ul#css3menu0 .toproot ul li:hover {
     z-index: 1;
     background: rgba(var(--hover), var(--opaque));
 }
