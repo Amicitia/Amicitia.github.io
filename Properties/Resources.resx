@@ -124,6 +124,9 @@
   <data name="decompiling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Flowscript\decompiling.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="Files" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Misc\Files.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="flowscript" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Flowscript\flowscript.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
@@ -168,5 +171,11 @@
   </data>
   <data name="PostTableHeader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\PostTableHeader.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="toc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Flowscript\toc.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_404" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Misc\404.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

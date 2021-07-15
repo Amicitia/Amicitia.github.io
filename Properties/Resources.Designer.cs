@@ -61,17 +61,23 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///                &lt;div class=&quot;content-outer&quot;&gt;
-        ///                    &lt;div class=&quot;content&quot;&gt;&lt;br&gt;
-        ///						Basics
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/compiling&quot;&gt;Compiling&lt;/a&gt;
-        ///						&lt;br&gt;
-        ///						&lt;br&gt;Features
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.gith [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FZ0cqpXL9EE&amp;amp;list=PLU6By7bu-RSvtk9aDlYplr73lfwpT2fFM&amp;amp;index=1&quot;&gt;&lt;img src=&quot;https://amicitia.github.io/images/404.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;a href=&quot;https://amicitia.github.io/&quot;&gt;Go Back&lt;/a&gt;&lt;/b&gt;&lt;/center&gt;.
+        /// </summary>
+        public static string _404 {
+            get {
+                return ResourceManager.GetString("_404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 			&lt;/td&gt;
+        ///			&lt;td style=&quot;width: 75%; padding-right:20px; vertical-align: top;&quot;&gt;
+        ///				&lt;div class=&quot;content-outer&quot;&gt;
+        ///                    &lt;div class=&quot;content&quot;&gt;
+        ///						&lt;h1&gt;Compiling&lt;/h1&gt;
+        ///&lt;br&gt;Using &lt;b&gt;AtlusScriptCompiler&lt;/b&gt;, you can turn &lt;b&gt;.flow&lt;/b&gt; files into &lt;b&gt;.bf&lt;/b&gt; files, or &lt;b&gt;.msg&lt;/b&gt; files into &lt;b&gt;.bmd&lt;/b&gt; files. Anything else referenced in a .flow (bf/bmd/flow/msg) also becomes part of a resulting .bf file.
+        ///&lt;br /&gt;
+        ///&lt;br /&gt;You can &lt;a href=&quot;https://shrinefox.com?tool=atlusscriptcompiler&quot;&gt;download the la [rest of string was truncated]&quot;;.
         /// </summary>
         public static string compiling {
             get {
@@ -95,6 +101,31 @@ namespace Amicitia.github.io.Properties {
         public static string decompiling {
             get {
                 return ResourceManager.GetString("decompiling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;br&gt;&lt;br&gt;If you need dumped CPK or CVM contents for modding purposes,
+        ///&lt;br&gt;check the links below to download what you need.
+        ///&lt;br&gt;
+        ///&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; Files necessary to actually run the games are &lt;b&gt;not included&lt;/b&gt;.
+        ///&lt;br&gt;These are provided for research and development purposes only.
+        ///&lt;br&gt;
+        ///&lt;br&gt;
+        ///&lt;table&gt;
+        ///    &lt;tbody&gt;
+        ///        &lt;tr&gt;
+        ///            &lt;td&gt;&lt;b&gt;Game&lt;/b&gt;&lt;/td&gt;
+        ///            &lt;td&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/td&gt;
+        ///            &lt;td&gt;&lt;b&gt;Links&lt;/b&gt;&lt;/td&gt;
+        ///        &lt;/tr&gt;
+        ///        &lt;tr&gt;
+        ///            &lt;td&gt;Persona 3 FES&lt;/td&gt;
+        ///          [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Files {
+            get {
+                return ResourceManager.GetString("Files", resourceCulture);
             }
         }
         
@@ -176,14 +207,13 @@ namespace Amicitia.github.io.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to             &lt;!--Waves--&gt;
-        ///&lt;div&gt;
         ///    &lt;svg class=&quot;waves&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 24 150 28&quot; preserveAspectRatio=&quot;none&quot; shape-rendering=&quot;auto&quot;&gt;
         ///        &lt;defs&gt;
         ///            &lt;path id=&quot;gentle-wave&quot; d=&quot;M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z&quot;&gt;&lt;/path&gt;
         ///        &lt;/defs&gt;
         ///        &lt;g class=&quot;parallax&quot;&gt;
         ///            &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
-        ///            &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;3&quot;&gt; [rest of string was truncated]&quot;;.
+        ///            &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;3&quot;&gt;&lt;/use&gt;        /// [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexBeforeContent {
             get {
@@ -261,13 +291,16 @@ namespace Amicitia.github.io.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;!-- IF S_NOTIFICATIONS_DISPLAY --&gt;
-        ///									&lt;li&gt;
-        ///										&lt;div class=&quot;text&quot;&gt;
-        ///											&lt;div class=&quot;toggle-title&quot;&gt;
-        ///												&lt;a class=&quot;item&quot;&gt;&lt;i class=&quot;icon fa-bell fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span&gt;{L_NOTIFICATIONS}&lt;/span&gt;&lt;strong class=&quot;badge&lt;!-- IF not NOTIFICATIONS_COUNT --&gt; hidden&lt;!-- ENDIF --&gt;&quot;&gt;{NOTIFICATIONS_COUNT}&lt;/strong&gt;&lt;/a&gt;&lt;/div&gt;
-        ///											&lt;div class=&quot;toggle-inner&quot; style=&quot;display: none;&quot;&gt;
-        ///												&lt;div class=&quot;dropdown-containers&quot;&gt;
-        ///													&lt;!-- INCLUDE notification_dropdown.htm [rest of string was truncated]&quot;;.
+        ///&lt;a href=&quot;https://shrinefox.com/forum/ucp.php?i=ucp_notifications&quot;&gt;
+        ///	&lt;div class=&quot;item&quot;&gt;
+        ///		&lt;i class=&quot;icon fa-bell fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;{L_NOTIFICATIONS}&lt;strong id=&quot;navtoggle&quot; class=&quot;badge&lt;!-- IF not NOTIFICATIONS_COUNT --&gt; hidden&lt;!-- ENDIF --&gt;&quot;&gt;{NOTIFICATIONS_COUNT}&lt;/strong&gt;
+        ///	&lt;/div&gt;
+        ///&lt;/a&gt;
+        ///&lt;!-- ENDIF --&gt;
+        ///&lt;!-- IF U_ACP --&gt;
+        ///&lt;a href=&quot;{U_ACP}&quot; title=&quot;{L_ACP}&quot; role=&quot;menuitem&quot;&gt;
+        ///	&lt;div class=&quot;item&quot;&gt;
+        ///		&lt;i class=&quot;icon fa-cogs fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp [rest of string was truncated]&quot;;.
         /// </summary>
         public static string LoginAndNotifications {
             get {
@@ -379,6 +412,25 @@ namespace Amicitia.github.io.Properties {
         public static string PostTableHeader {
             get {
                 return ResourceManager.GetString("PostTableHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Basics
+        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
+        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
+        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
+        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/compiling&quot;&gt;Compiling&lt;/a&gt;
+        ///&lt;br&gt;
+        ///&lt;br&gt;Features
+        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/importing&quot;&gt;Importing&lt;/a&gt;
+        ///&lt;br&gt;↳ Declaring Functions
+        ///&lt;br&gt;↳ Declaring Variables
+        ///&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/hook [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string toc {
+            get {
+                return ResourceManager.GetString("toc", resourceCulture);
             }
         }
     }

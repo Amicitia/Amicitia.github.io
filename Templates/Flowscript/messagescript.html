@@ -1,38 +1,7 @@
-<div class="container body-content">
-	<table>
-        <tr>
-            <td width="25%" style="vertical-align:top">
-                <div class="content-outer">
-                    <div class="content"><br>
-						Basics
-						<br>↳ <a href="https://amicitia.github.io/docs/flowscript">Flowscript</a>
-						<br>↳ <a href="https://amicitia.github.io/docs/messagescript">Messagescript</a>
-						<br>↳ <a href="https://amicitia.github.io/docs/decompiling">Decompiling</a>
-						<br>↳ <a href="https://amicitia.github.io/docs/compiling">Compiling</a>
-						<br>
-						<br>Features
-						<br>↳ <a href="https://amicitia.github.io/docs/importing">Importing</a>
-						<br>↳ Declaring Functions
-						<br>↳ Declaring Variables
-						<br>↳ <a href="https://amicitia.github.io/docs/hookingfunctions">Hooking Functions</a>
-						<br>
-						<br>P5 Functions
-						<br>↳ AI
-						<br>↳ Common
-						<br>↳ Facility
-						<br>↳ Field
-						<br>↳ Net
-						<br>↳ Social
-					</div>
-				</div>
-			</td>
-			<td style="width: 75%; padding-right:20px; vertical-align: top;">
-				<div class="content-outer">
-					<div class="content">
-						<h1>Messagescript</h1><i>Flowscript</i> doesn't support <a href="https://techterms.com/definition/string">strings</a> as a variable type, but it's possible to display text in the form of dialog and selectable options by referencing a <b>messagescript</b> file.
-						<h2>Creating a Messagescript</h2>
+<h1>Messagescript</h1><i>Flowscript</i> doesn't support <a href="https://techterms.com/definition/string">strings</a> as a variable type, but it's possible to display text in the form of dialog and selectable options by referencing a <b>messagescript</b> file.
+<h2>Creating a Messagescript</h2>
 						Messagescripts are text files ending with the extension .<b>msg</b>, often accompanying a .<i>flow</i> (<i>flowscript</i>). Simply create a new text file and rename the extension. You may need to <a href="https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/">make Windows display known file extensions</a> in order to change .txt to .msg.
-						<br>Below is a sample from a <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptCompiler/Resources/TestScript2.msg">custom messagescript</a>.
+<br>Below is a sample from a <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptCompiler/Resources/TestScript2.msg">custom messagescript</a>.
 <pre><code class="c#">[dlg BossRushModeDialog [TGE]]
 [f 2 1]Select a boss fight.[f 1 1][e]
 
@@ -44,33 +13,33 @@
 [f 2 1]Previous[e]
 [f 2 1]Next[e]
 </code></pre>
-						<br>There are <b>two types</b> of message declarations: <b>dialog</b> and <b>selection</b>.
-						<br>Brackets that start with <b>dlg</b> or <b>msg</b>...
-						<ul>
-							<li>Can be used for dialog boxes, window labels etc.
-							<li>Have a unique name (i.e. <b>BossRushModeDialog</b> )
-							<li>Can have an optional nametag in brackets (i.e. <b>[TGE]</b> )
-							<li>Have a message on the next new line, starting with <b>[s]</b>/<b>[f 2 1]</b> and ending with <b>[e]</b>.
-							<li>Can have multiple messages on new lines as long as they come before the next message declaration.
-						</ul>
-						<br>Brackets that start with <b>sel</b>...
-						<ul>
-							<li>Can be used for menu options.
-							<li>Have a unique name (i.e. <b>SelectBoss0</b> )
-							<li>Have a message on the next new line, starting with <b>[s]</b>/<b>[f 2 1]</b> and ending with <b>[e]</b>.
-							<li>Can have multiple messages on new lines as long as they come before the next message declaration.
-						</ul>
-						<a href="https://youtu.be/fTUIyUgc04U?t=237"><img src="https://i.imgur.com/Q3AkSbO.png"></a>
-						<h2>Using Markup</h2>
+<br>There are <b>two types</b> of message declarations: <b>dialog</b> and <b>selection</b>.
+<br>Brackets that start with <b>dlg</b> or <b>msg</b>...
+<ul>
+	<li>Can be used for dialog boxes, window labels etc.
+	<li>Have a unique name (i.e. <b>BossRushModeDialog</b> )
+	<li>Can have an optional nametag in brackets (i.e. <b>[TGE]</b> )
+	<li>Have a message on the next new line, starting with <b>[s]</b>/<b>[f 2 1]</b> and ending with <b>[e]</b>.
+	<li>Can have multiple messages on new lines as long as they come before the next message declaration.
+</ul>
+<br>Brackets that start with <b>sel</b>...
+<ul>
+	<li>Can be used for menu options.
+	<li>Have a unique name (i.e. <b>SelectBoss0</b> )
+	<li>Have a message on the next new line, starting with <b>[s]</b>/<b>[f 2 1]</b> and ending with <b>[e]</b>.
+	<li>Can have multiple messages on new lines as long as they come before the next message declaration.
+</ul>
+<a href="https://youtu.be/fTUIyUgc04U?t=237"><img src="https://i.imgur.com/Q3AkSbO.png"></a>
+<h2>Using Markup</h2>
 						You can change the appearance of text by inserting the following codes (in brackets) into your message.
-						<ul>
-							<li>[<b>clr</b> x] Text color. x is a number <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Documents/RE/MessageScriptInterpreter.cpp#L28">between 0 and 30</a>. Affects all text after the tag until the end of the line ([e]).
-							<li>[<b>n</b>] Linebreak. Put this between some text to make it show up on a new line ingame.
-							<li>[<b>w</b>] Wait. Makes the game await user input before moving on to the next line.
-							<li>[<b>vp</b> w x y z 0 0] Voice Pack. Makes the game play a voice clip. <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptLibrary/Libraries/Persona5/MessageScriptLibrary.json#L233">w = eventIdMajor, x = eventIdMinor, y = eventIdSub, z = cueId</a>.
-							<li>[<b>bup</b> 0 x y z 0] Bustup. Shows a character's talking sprite during dialog. <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptLibrary/Libraries/Persona5/MessageScriptLibrary.json#L314">x = characterId, y = expressionId, z = customeId</a>. Lip flap will animate if followed by [f 4 10 -1 0 0].
-						</ul>
-						<h2>Referencing Messages in Flowscripts</h2>
+<ul>
+	<li>[<b>clr</b> x] Text color. x is a number <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Documents/RE/MessageScriptInterpreter.cpp#L28">between 0 and 30</a>. Affects all text after the tag until the end of the line ([e]).
+	<li>[<b>n</b>] Linebreak. Put this between some text to make it show up on a new line ingame.
+	<li>[<b>w</b>] Wait. Makes the game await user input before moving on to the next line.
+	<li>[<b>vp</b> w x y z 0 0] Voice Pack. Makes the game play a voice clip. <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptLibrary/Libraries/Persona5/MessageScriptLibrary.json#L233">w = eventIdMajor, x = eventIdMinor, y = eventIdSub, z = cueId</a>.
+	<li>[<b>bup</b> 0 x y z 0] Bustup. Shows a character's talking sprite during dialog. <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptLibrary/Libraries/Persona5/MessageScriptLibrary.json#L314">x = characterId, y = expressionId, z = customeId</a>. Lip flap will animate if followed by [f 4 10 -1 0 0].
+</ul>
+<h2>Referencing Messages in Flowscripts</h2>
 						By <a href="https://amicitia.github.io/docs/importing">importing the messagescript into the flowscript</a>, you can reference messages in two ways: by <b>ID</b> or by the message's <b>unique name</b>.
 						For instance, here's an example of a dialog box that references the messagescript sample above.
 <pre><code class="c#">import( "TestScript2.msg" );
@@ -84,7 +53,7 @@ void StartBossrushMode()
 	// Close the dialog window
 	MSG_WND_CLS(); 	
 }</pre></code>
-						<b>MSG(BossRushModeDialog, 0)</b> actually yeilds the same results as <b>MSG(5, 0)</b> since (counting up from 0) BossRushModeDialog is the fifth selection or dialog message with a unique name in the <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptCompiler/Resources/TestScript2.msg#L31">msg file</a>.
+<b>MSG(BossRushModeDialog, 0)</b> actually yeilds the same results as <b>MSG(5, 0)</b> since (counting up from 0) BossRushModeDialog is the fifth selection or dialog message with a unique name in the <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptCompiler/Resources/TestScript2.msg#L31">msg file</a>.
 						Here's an example of a selection that returns an integer (the index of the string from the referenced [sel] message).
 <pre><code class="c#">// Display dialog window
 MSG_WND_DSP(); 
@@ -92,7 +61,7 @@ MSG( HelloDialog, 0 );
 // Display selection options while dialog is still shown
 int selection = SEL( 1 );
 MSG_WND_CLS();</pre></code>
-						<b>SEL(1)</b> in this case refers to <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptCompiler/Resources/TestScript2.msg#L4">this message in the messagescript file</a>. You can use the value it returns to decide what to do with the selected option in-game:
+<b>SEL(1)</b> in this case refers to <a href="https://github.com/TGEnigma/AtlusScriptToolchain/blob/a8533ccf589953e6a75858c4bcb333a4dcdc38bc/Source/AtlusScriptCompiler/Resources/TestScript2.msg#L4">this message in the messagescript file</a>. You can use the value it returns to decide what to do with the selected option in-game:
 <pre><code class="c#">
 switch ( selection )
 {
@@ -118,9 +87,6 @@ switch ( selection )
 	default:
 		break;
 }</pre></code>
-					</div>
-				</div>
 			</td>
 		</tr>
 	</table>
-</div>

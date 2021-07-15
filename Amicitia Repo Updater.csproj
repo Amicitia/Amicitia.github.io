@@ -127,12 +127,15 @@
     <Content Include="Templates\Flowscript\decompiling.html" />
     <Content Include="Templates\Flowscript\flowscript.html" />
     <Content Include="Templates\Flowscript\hookingfunctions.html" />
+    <Content Include="Templates\Flowscript\toc.html" />
     <Content Include="Templates\Flowscript\importing.html" />
     <Content Include="Templates\Forum\LoginAndNotifications.html" />
     <Content Include="Templates\Forum\overall_header.html" />
     <Content Include="Templates\IndexAfterHeader.html" />
     <Content Include="Templates\IndexBeforeContent.html" />
     <Content Include="Templates\IndexBeforeHeader.html" />
+    <Content Include="Templates\Misc\404.html" />
+    <Content Include="Templates\Misc\Files.html" />
     <Content Include="Templates\Navigation.html" />
     <Content Include="Templates\Post.html" />
     <Content Include="Templates\PostTableHeader.html" />

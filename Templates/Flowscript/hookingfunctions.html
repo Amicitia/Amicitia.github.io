@@ -1,45 +1,14 @@
-<div class="container body-content">
-	<table>
-        <tr>
-            <td width="25%" style="vertical-align:top">
-                <div class="content-outer">
-                    <div class="content"><br>
-						Basics
-						<br>↳ <a href="https://amicitia.github.io/docs/flowscript">Flowscript</a>
-						<br>↳ <a href="https://amicitia.github.io/docs/messagescript">Messagescript</a>
-						<br>↳ <a href="https://amicitia.github.io/docs/decompiling">Decompiling</a>
-						<br>↳ <a href="https://amicitia.github.io/docs/compiling">Compiling</a>
-						<br>
-						<br>Features
-						<br>↳ <a href="https://amicitia.github.io/docs/importing">Importing</a>
-						<br>↳ Declaring Functions
-						<br>↳ Declaring Variables
-						<br>↳ <a href="https://amicitia.github.io/docs/hookingfunctions">Hooking Functions</a>
-						<br>
-						<br>P5 Functions
-						<br>↳ AI
-						<br>↳ Common
-						<br>↳ Facility
-						<br>↳ Field
-						<br>↳ Net
-						<br>↳ Social
-					</div>
-				</div>
-			</td>
-			<td style="width: 75%; padding-right:20px; vertical-align: top;">
-				<div class="content-outer">
-					<div class="content">
-						<h1>Hooking Functions</h1>
+<h1>Hooking Functions</h1>
 						AtlusScriptCompiler is not perfect, and sometimes decompiled data is imprecise (usually float values). This can lead to glitches (weird camera/player positioning and movement) and even crashes in-game when a recompiled script is modded back in.
-						<br />To get around this, AtlusScriptCompiler has a feature that preserves the original .BF's data, appending only new data to the end from your compiled .FLOW.
-						<br />You can use this to <b>replace the contents of a specific method or function</b> without screwing up the rest of the file.
-						<h2>Creating the .FLOW</h2>
+<br />To get around this, AtlusScriptCompiler has a feature that preserves the original .BF's data, appending only new data to the end from your compiled .FLOW.
+<br />You can use this to <b>replace the contents of a specific method or function</b> without screwing up the rest of the file.
+<h2>Creating the .FLOW</h2>
 						In this example, let's say we wanted to replace ONLY the contents of <b>fld_square_menu</b>, a method in <b>field.bf</b>.
-						<br />We would have to create a new text document ending with the .FLOW extension, named anything we want. In this example, <b>fieldhook.flow</b>.
-						<h2>Referencing the .BF</h2>
+<br />We would have to create a new text document ending with the .FLOW extension, named anything we want. In this example, <b>fieldhook.flow</b>.
+<h2>Referencing the .BF</h2>
 						In that blank document, let's import the bf. Make sure the .flow is in the same directory as the .bf and <a href="https://amicitia.github.io/docs/importing">follow the instructions from the importing guide</a>, like so:
 <pre><code>import( "field.bf" );</code></pre>
-						<h2>Creating the Hook</h2>
+<h2>Creating the Hook</h2>
 						Next, let's copy the method we want to replace from the decompiled .bf, changing whatever we want. You can even reference external methods you add to your .flow like so:
 <pre><code>
 import( "field.bf" );
@@ -56,14 +25,11 @@ void ModMenuDisplay()
 ...
 </code></pre>
 						Note that the replacement method has "_hook" appended to the name. This is important.
-						<h2>Compiling the .FLOW</h2>
+<h2>Compiling the .FLOW</h2>
 						Follow the same steps as the <a href="https://amicitia.github.io/docs/compiling">Compiling guide</a>, except add one extra commandline argument: "-Hook".
-						<br />For example:
-						<br /><pre><code>AtlusScriptCompiler.exe fieldhook.flow -Compile -OutFormat V3BE -Library P5 -Encoding P5 -Hook</code></pre>
-						<br />This should generate fieldhook.bf, an identical copy of field.bf except with the <b>ModMenuDisplay()</b> method replacing the contents of <b>fld_square_menu_hook</b>.
-					</div>
-				</div>
+<br />For example:
+<br /><pre><code>AtlusScriptCompiler.exe fieldhook.flow -Compile -OutFormat V3BE -Library P5 -Encoding P5 -Hook</code></pre>
+<br />This should generate fieldhook.bf, an identical copy of field.bf except with the <b>ModMenuDisplay()</b> method replacing the contents of <b>fld_square_menu_hook</b>.
 			</td>
 		</tr>
 	</table>
-</div>

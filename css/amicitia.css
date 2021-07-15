@@ -202,6 +202,10 @@ h1, h2, h3, h4, h5 {
     border-radius: var(--radius);
 }
 
+#wrap h1, #wrap h2, #wrap h3, #wrap h4, #wrap h5 {
+    color: rgba(var(--textinner), var(--opaque));
+}
+
 #main {
     width: 80%;
 }
@@ -894,12 +898,6 @@ input[type="button"]::-moz-focus-inner {
         left: 22px;
         top: -8px;
         display: initial;
-    }
-}
-@media (max-width: 600px) 
-{
-    .navbar {
-        display: none;
     }
 }
 

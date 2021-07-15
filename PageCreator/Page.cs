@@ -147,14 +147,16 @@ namespace Amicitia.github.io.PageCreator
         {
             foreach (string page in new string[] { "compiling", "decompiling", "flowscript", "hookingfunctions", "importing", "messagescript" })
             {
-                string content = "";
-                content += Properties.Resources.IndexHeader;
-                content += Properties.Resources.IndexSidebar;
-                content += File.ReadAllText(Path.Combine(Path.Combine(Path.Combine(indexPath, "Templates"), "Flowscript"), page + ".html"));
-                content += Properties.Resources.IndexFooter;
-                content = content.Replace("\"all\">Game", "\"all\">Flowscript").Replace("\"all\">Modding Resources", "\"all\">Docs");
-                content = content.Replace(">Amicitia Mods", $">Amicitia - {page}");
-                File.WriteAllText(Path.Combine(Path.Combine(indexPath, "docs"), page + ".html"), content);
+                Console.WriteLine($"Creating {page} doc...");
+                string html = "<!doctype html>\n<html>\n\t<head>\n" + Properties.Resources.IndexBeforeHeader;
+                html += $"<title>Amicitia - {FirstCharToUpper(page)}</title>";
+                html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader
+                    + $"<center><a href=\"https://amicitia.github.io\"><img src=\"https://amicitia.github.io/images/logo.svg\" " +
+                    $"style=\"width:150px;height:150px;\"><h1>Flowscript Docs</h1><h2>{FirstCharToUpper(page)}</h2></a></center>"
+                    + Properties.Resources.IndexBeforeContent + $"<b><a href=\"https://shrinefox.com/\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> > Resources > <a href=\"https://amicitia.github.io\">Browse Mods & Tools</a> > Flowscript Docs > {FirstCharToUpper(page)}</b><br><br>";
+                html += Properties.Resources.toc + File.ReadAllText(Path.Combine(Path.Combine(Path.Combine(indexPath, "Templates"), "Flowscript"), page + ".html"));
+                html += Properties.Resources.IndexFooter;
+                File.WriteAllText(Path.Combine(Path.Combine(indexPath, "docs"), page + ".html"), html);
             }
         }
 
@@ -163,17 +165,18 @@ namespace Amicitia.github.io.PageCreator
             foreach (string page in new string[] { "404", "files" })
             {
                 Console.WriteLine($"Creating {page} page...");
-                string content = "";
-                content += Properties.Resources.IndexHeader;
-                content += Properties.Resources.IndexSidebar;
-                content += File.ReadAllText(Path.Combine(Path.Combine(Path.Combine(indexPath, "Templates"), "Misc"), page + ".html"));
-                content += Properties.Resources.IndexFooter;
+                string html = "<!doctype html>\n<html>\n\t<head>\n" + Properties.Resources.IndexBeforeHeader;
+                html += $"<title>Amicitia - {FirstCharToUpper(page)}</title>";
+                html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader
+                    + $"<center><a href=\"https://amicitia.github.io\"><img src=\"https://amicitia.github.io/images/logo.svg\" " +
+                    $"style=\"width:150px;height:150px;\"><h1>{FirstCharToUpper(page)}</h1></a></center>"
+                    + Properties.Resources.IndexBeforeContent + "<b><a href=\"https://shrinefox.com/\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> > Resources > <a href=\"https://amicitia.github.io\">Browse Mods & Tools</a> > ";
                 if (page == "404")
-                    content = content.Replace("\"all\">Game", "\"all\">404").Replace("\"all\">Modding Resources", "\"all\">Not Found");
+                    html += $"Not Found</b><br>{Properties.Resources._404}";
                 else if (page == "files")
-                    content = content.Replace("\"all\">Game", "\"all\">Dumped").Replace("\"all\">Modding Resources", "\"all\">Files");
-                content = content.Replace(">Amicitia Mods", $">Amicitia - {page}");
-                File.WriteAllText(Path.Combine(indexPath, page + ".html"), content);
+                    html += $"Files</b><br>{Properties.Resources.Files}";
+                html += Properties.Resources.IndexSidebar + Properties.Resources.IndexFooter;
+                File.WriteAllText(Path.Combine(indexPath, page + ".html"), html);
             }
             
             string forumThemePath = Path.Combine(indexPath, "forum//styles//prolight//template");
