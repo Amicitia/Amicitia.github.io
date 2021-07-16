@@ -208,47 +208,38 @@
 <center><nav class="pagination" role="navigation"><div class="nav-links"><span aria-current="page" class="page-numbers current">1</span></div></nav></center>
 <br>
 <!--Post Grid-->
-<div class="cards"><div class="toggle">
-    <div class="toggle-title">
-        <table cellspacing="0">
-            <tr class="post">
-                <td>
-                    <div id="cheatp3fes-analogcamera" class="cheatcode">// ""processInput"" jump to patch code<br>patch=1,EE,001E05B0,word,08140d17 // j $50345C  Jump to custom code that restores turn rate<br><br>// ""processInput"" fix sticks being offset by 128 instead of 127<br>patch=1,EE,001E073C,word,3c0242fe // lui v0, $42FE<br>patch=1,EE,001E07C4,word,3c0342fe // lui v1, $42FE<br>patch=1,EE,001E0844,word,3c0342fe // lui v1, $42FE<br>patch=1,EE,001E0898,word,3c0342fe // lui v1, $42FE<br><br>// ""processInput"" right stick left turn check, jump to patch code<br>patch=1,EE,001E09DC,word,3c03c120 // lui v1, $C120 Change deadzone to -10.0<br>patch=1,EE,001E09EC,word,08140d10 // j $503440  Jump to custom code that adjusts turn rate<br><br>// ""processInput"" right stick right turn check, jump to patch code<br>patch=1,EE,001E08B8,word,3c034120 // lui v1, $4120 Change deadzone to 10.0<br>patch=1,EE,001E08C8,word,08140cfc // j $5033F0  Jump to custom code that adjusts turn rate<br><br>// Patch custom turn code over some unused syscall wrappers<br><br>// Left turn hook<br>// $v1, $a0, $f0 and $f20 are free to use<br>// $f1 contains the right stick X axis as [-127, 128]<br>// -0x4AC4($gp) aka $B53C(gp) is turn rate<br>// Check if out of deadzone<br>patch=1,EE,00503440,word,45000005 // bc1f $5<br>// $f0 = $f1 / 64.0<br>patch=1,EE,00503444,word,3c03c1c0 // lui v1, $C1C0  $v1 = -24.0<br>patch=1,EE,00503448,word,44830000 // mtc1 v1, $f0   $f0 = v1<br>patch=1,EE,0050344C,word,46000803 // div.s $f0, $f1, $f0$f0 = $f1 / $f0<br>// $B53C(gp) *= f0<br>patch=1,EE,00503450,word,0807827d // j $1E09F4  return<br>patch=1,EE,00503454,word,e780b53c // swc1 $f0, $B53C(gp)$B53C(gp) = $f0<br>// outside of deadzone<br>patch=1,EE,00503458,word,080782ba // j $1E0AE8  return<br>patch=1,EE,0050345C,word,00000000 // nop<br><br>// Restore turn rate at the beginning of processInput<br>// $B53C(gp) = 4.0<br>patch=1,EE,0050345C,word,3c034080 // lui v1, $4080  $v1 = 4.0<br>patch=1,EE,00503460,word,af83b53c // sw v1, $B53C(gp)   $B53C(gp) = v1<br>patch=1,EE,00503464,word,0807816d // j $1E05B4  return<br>patch=1,EE,00503468,word,27bdfed0 //Overwritten instruction<br><br>// Right turn hook<br>// $v1, $a0, $f0 and $f20 are free to use<br>// $f1 contains the right stick X axis as [-127, 128]<br>// -0x4AC4($gp) aka $B53C(gp) is turn rate<br>// Check if out of deadzone<br>patch=1,EE,005033F0,word,45010005 // bc1t $5<br>// $f0 = $f1 / 64.0<br>patch=1,EE,005033F4,word,3c0341c0 // lui v1, $41C0  $v1 = 24.0<br>patch=1,EE,005033F8,word,44830000 // mtc1 v1, $f0   $f0 = v1<br>patch=1,EE,005033FC,word,46000803 // div.s $f0, $f1, $f0$f0 = $f1 / $f0<br>// $B53C(gp) *= f0<br>patch=1,EE,00503400,word,08078234 // j $1E08D0  return<br>patch=1,EE,00503404,word,e780b53c // swc1 $f0, $B53C(gp)$B53C(gp) = $f0<br>// outside of deadzone<br>patch=1,EE,00503408,word,08078274 // j $1E09D0  return<br>patch=1,EE,0050340C,word,00000000 // nop</div>
-                </td>
-                <td>
-                    <b>Analog Camera Control</b>
-                </td>
-                <td>
+<article class="cards nav-links"><div class="card">
+    <a class="card__media" href="javascript:copyDivToClipboard('cheatp3fes-analogcamera')" title="Media">
+        <img src="javascript:copyDivToClipboard('cheatp3fes-analogcamera')" class="wp-post-image">
+        <div class="card__body">
+            <header class="card__header">
+                <a class="card__subtitle" title="Category">
                     P3FES Cheat
-                </td>
-                <td>
-                    <a href="https://amicitia.github.io/author/AltimorTASDK">AltimorTASDK</a>
-                </td>
-                <td>
-                    6/9/2018 (updated)
-                </td>
-            </tr>
-        </table>
+                </a>
+                <h3 class="card__title">
+                    <a title="Title" href="">Analog Camera Control</a>
+                </h3>
+                by <a href="https://amicitia.github.io/author/AltimorTASDK">AltimorTASDK</a>
+            </header>
+            <div class="card__content">
+                <p>
+                    This makes camera turn speed dependent on how far you've pushed the analog stick. Normally the game  ... 
+                </p>
+            </div>
+            <span class="tags-links"></span>
+            <table style="margin-top: var(--padding);">
+                <tbody>
+                    <tr>
+                        <td title="Last Updated"><i class="fas fa-history" aria-hidden="true"></i> 6/9/2018 (updated)</td>
+                        <td style="text-align: right;">
+                            <a title="Copy to Clipboard" href="" style=""><i class="far fa-clipboard" aria-hidden="true"></i><span class="sr-only">Copy to Clipboard</span> Read More</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="toggle-inner">
-        <table cellspacing="0">
-            <tr>
-                <td class="postinner">
-                    <a href="javascript:copyDivToClipboard('cheatp3fes-analogcamera')"><div id="cheatp3fes-analogcamera" class="cheatcode">// ""processInput"" jump to patch code<br>patch=1,EE,001E05B0,word,08140d17 // j $50345C  Jump to custom code that restores turn rate<br><br>// ""processInput"" fix sticks being offset by 128 instead of 127<br>patch=1,EE,001E073C,word,3c0242fe // lui v0, $42FE<br>patch=1,EE,001E07C4,word,3c0342fe // lui v1, $42FE<br>patch=1,EE,001E0844,word,3c0342fe // lui v1, $42FE<br>patch=1,EE,001E0898,word,3c0342fe // lui v1, $42FE<br><br>// ""processInput"" right stick left turn check, jump to patch code<br>patch=1,EE,001E09DC,word,3c03c120 // lui v1, $C120 Change deadzone to -10.0<br>patch=1,EE,001E09EC,word,08140d10 // j $503440  Jump to custom code that adjusts turn rate<br><br>// ""processInput"" right stick right turn check, jump to patch code<br>patch=1,EE,001E08B8,word,3c034120 // lui v1, $4120 Change deadzone to 10.0<br>patch=1,EE,001E08C8,word,08140cfc // j $5033F0  Jump to custom code that adjusts turn rate<br><br>// Patch custom turn code over some unused syscall wrappers<br><br>// Left turn hook<br>// $v1, $a0, $f0 and $f20 are free to use<br>// $f1 contains the right stick X axis as [-127, 128]<br>// -0x4AC4($gp) aka $B53C(gp) is turn rate<br>// Check if out of deadzone<br>patch=1,EE,00503440,word,45000005 // bc1f $5<br>// $f0 = $f1 / 64.0<br>patch=1,EE,00503444,word,3c03c1c0 // lui v1, $C1C0  $v1 = -24.0<br>patch=1,EE,00503448,word,44830000 // mtc1 v1, $f0   $f0 = v1<br>patch=1,EE,0050344C,word,46000803 // div.s $f0, $f1, $f0$f0 = $f1 / $f0<br>// $B53C(gp) *= f0<br>patch=1,EE,00503450,word,0807827d // j $1E09F4  return<br>patch=1,EE,00503454,word,e780b53c // swc1 $f0, $B53C(gp)$B53C(gp) = $f0<br>// outside of deadzone<br>patch=1,EE,00503458,word,080782ba // j $1E0AE8  return<br>patch=1,EE,0050345C,word,00000000 // nop<br><br>// Restore turn rate at the beginning of processInput<br>// $B53C(gp) = 4.0<br>patch=1,EE,0050345C,word,3c034080 // lui v1, $4080  $v1 = 4.0<br>patch=1,EE,00503460,word,af83b53c // sw v1, $B53C(gp)   $B53C(gp) = v1<br>patch=1,EE,00503464,word,0807816d // j $1E05B4  return<br>patch=1,EE,00503468,word,27bdfed0 //Overwritten instruction<br><br>// Right turn hook<br>// $v1, $a0, $f0 and $f20 are free to use<br>// $f1 contains the right stick X axis as [-127, 128]<br>// -0x4AC4($gp) aka $B53C(gp) is turn rate<br>// Check if out of deadzone<br>patch=1,EE,005033F0,word,45010005 // bc1t $5<br>// $f0 = $f1 / 64.0<br>patch=1,EE,005033F4,word,3c0341c0 // lui v1, $41C0  $v1 = 24.0<br>patch=1,EE,005033F8,word,44830000 // mtc1 v1, $f0   $f0 = v1<br>patch=1,EE,005033FC,word,46000803 // div.s $f0, $f1, $f0$f0 = $f1 / $f0<br>// $B53C(gp) *= f0<br>patch=1,EE,00503400,word,08078234 // j $1E08D0  return<br>patch=1,EE,00503404,word,e780b53c // swc1 $f0, $B53C(gp)$B53C(gp) = $f0<br>// outside of deadzone<br>patch=1,EE,00503408,word,08078274 // j $1E09D0  return<br>patch=1,EE,0050340C,word,00000000 // nop</div></a>
-                    <br><br>
-                    <span class="tags-links">
-                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                        <br><br>Tags:
-                        <br>
-                    </span>
-                </td>
-                <td class="postinner">
-                    This makes camera turn speed dependent on how far you've pushed the analog stick. Normally the game only lets you turn once the stick passes a certain threshold at a fixed speed.
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>								<center><nav class="pagination" role="navigation"><div class="nav-links"><span aria-current="page" class="page-numbers current">1</span></div></nav></center>
+</div></article>								<center><nav class="pagination" role="navigation"><div class="nav-links"><span aria-current="page" class="page-numbers current">1</span></div></nav></center>
                                 </td>
 							</tr>
 						</table>

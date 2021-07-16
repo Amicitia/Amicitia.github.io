@@ -84,6 +84,9 @@ namespace Amicitia.github.io.PageCreator
 
             //Post Summary
             result = Properties.Resources.Post;
+            //Copy Cheat to Clipboard
+            if (post.Type == "cheat")
+                result = result.Replace("More Information", "Copy to Clipboard").Replace("fas fa-ellipsis-h", "far fa-clipboard");
             //Thumbnail
             if (post.Type != "cheat")
             {
@@ -92,7 +95,7 @@ namespace Amicitia.github.io.PageCreator
                 {
                     string videoID = post.EmbedURL.Substring(post.EmbedURL.IndexOf("v=") + 2);
                     string ytThumb = $"https://img.youtube.com/vi/{videoID}/default.jpg";
-                    result = result.Replace("POSTEMBED", $"<img src=\"{ytThumb}\">").Replace("POSTMEDIAURL", post.EmbedURL);
+                    result = result.Replace("POSTEMBED", $"<img src=\"{ytThumb}\">").Replace("POSTURL", "POSTMEDIAURL");
                 }
                 else if (post.EmbedURL.Contains("streamable.com"))
                 {
@@ -109,7 +112,7 @@ namespace Amicitia.github.io.PageCreator
             {
                 // If cheat, put cheatcode in thumbnail spot
                 result = result.Replace("POSTEMBED", $"<div id=\"cheat{post.Id}\" class=\"cheatcode\">{post.UpdateText}</div>");
-                result = result.Replace("POSTMEDIAURL", $"javascript:copyDivToClipboard('cheat{post.Id}')").Replace("fas fa-eye", "fas fa-clipboard");
+                result = result.Replace("POSTMEDIAURL", $"javascript:copyDivToClipboard('cheat{post.Id}')");
             }
             result = result.Replace("POSTID", "https://amicitia.github.io/post/" + post.Id);
 
@@ -128,14 +131,10 @@ namespace Amicitia.github.io.PageCreator
                 result = result.Replace("POSTDATE", post.Date + " (updated)");
             else
                 result = result.Replace("POSTDATE", post.Date);
-            //Hide Post Details Unless Single Post
-            if (single)
-                result = result.Replace("class=\"toggle-inner\" style=\"display: none;", "class=\"toggle-inner\" style=\"display: block;").Replace("min-width: 32%;", "min-width: 100%;");
-            //Description
-            result = result.Replace("POSTDESCRIPTION", $"{post.Description}");
             //Download
-            if (post.Type != "cheat")
-                result = result.Replace("POSTURL", post.URL);
+            result = result.Replace("POSTURL", post.URL);
+            //Description
+            result = result.Replace("POSTDESCRIPTION", $"{Webscraper.TruncateLongString(post.Description, 100)}");
             //Tags
             string tags = "";
             foreach (string tag in post.Tags.Where(x => !String.IsNullOrWhiteSpace(x)))

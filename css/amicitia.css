@@ -876,10 +876,6 @@ input[type="button"]::-moz-focus-inner {
     #main {
         width: 100%;
     }
-
-    .card img {
-        max-height: 100px;
-    }
 	
 	#site_disclaimer {
 		font-size: 8pt !important;
@@ -933,4 +929,39 @@ input[type="button"]::-moz-focus-inner {
 .itemDate{font-size:14pt;}
 #blog-latest .itemDate, #news-latest .itemDate, #guides-latest .itemDate {
     color: rgba(var(--textinner), var(--opaque));
+}
+
+/* Cards */
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+}
+
+.card {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(var(--textinner), 0.1);
+    position: relative;
+    transition: all .3s ease;
+    height: max-content;
+    margin-left: var(--padding);
+    margin-bottom: var(--padding);
+    padding-bottom: var(--padding);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(var(--textinner), 0.2);
+}
+
+.card__media {
+    display: block;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.card__media img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }

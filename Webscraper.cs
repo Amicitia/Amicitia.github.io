@@ -83,7 +83,7 @@ namespace Amicitia.github.io
                                     if (item.HasDescription)
                                         post.Description = item.Description;
                                     else
-                                        post.Description = TruncateLongString(item.ConvertedText.Replace("\t", "").Replace("\r<br>", "").Replace("\r", ""), 1000).TrimEnd('\n').TrimEnd('\\').Replace("\n", "<br>");
+                                        post.Description = TruncateLongString(item.ConvertedText.Replace("\t", "").Replace("\r<br>", "").Replace("\r", ""), 100).TrimEnd('\n').TrimEnd('\\').Replace("\n", "<br>");
                                     post.EmbedURL = item.Image.ToString();
                                     post.URL = item.Link.ToString();
                                     if (post.URL.Contains("/tuts/"))

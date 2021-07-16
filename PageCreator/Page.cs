@@ -107,7 +107,7 @@ namespace Amicitia.github.io.PageCreator
             // Hacky workaround for navbar ul class being renamed
             html = html.Replace("css3menu0", "TEMPcss3menu0");
             // Append content, navigation and footer to content
-            html += content; // Body Content
+            html += content + "</article>"; // Body Content
             html += Properties.Resources.IndexFooter; // Footer
             html = html.Replace("<!--Pagination-->", pagination); // Pagination
 
