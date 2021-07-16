@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #wrap hr {
-    color: rgba(var(--textinner), var(--opaque));
+    border: 1px solid rgba(var(--textinner), var(--opaque)) !important;
 }
 
 /* Header */
