@@ -26,7 +26,7 @@
                 <input type="checkbox" id="../css3menu-switcher" class="c3m-switch-input">
                 <ul id="css3menu0" class="topmenu">
                     <li class="switch"><label onclick="" for="../css3menu-switcher"></label></li>
-                    <li class="topmenu"><a href="https://shrinefox.com" style="height:37px;line-height:37px;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li class="toproot"><a href="https://shrinefox.com" style="height:37px;line-height:37px;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li class="toproot">
                         <a style="height:37px;line-height:37px;"><span><i class="fa fa-cube" aria-hidden="true"></i> Resources <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
                         <ul>
@@ -47,7 +47,9 @@
                         </ul>
                     </li>
                     <li class="toproot" style="margin-left: 10px; position: relative;">
-                        <a id="sidebartoggle" style="height:20px;"><span><i class="fa fa-user-circle"></i> Profile <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
+                        <a id="sidebartoggle">
+                            <i class="fa fa-user-circle"></i> Profile
+                        </a>
                         <ul style="padding: 0 !important; -webkit-box-shadow: none !important; box-shadow: none !important; ">
                             <div>
                                 <div class="sidebar">
@@ -109,7 +111,7 @@
                         <ul>
                             <li><a href="https://shrinefox.com/news"><i class="fa fa-newspaper" aria-hidden="true"></i> News</a></li>
                             <li><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Guides</a></li>
-                            <li><a href="https://shrinefox.com"><i class="fab fa-wordpress" aria-hidden="true"></i> Blog</a></li>
+                            <li><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress" aria-hidden="true"></i> Blog</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -187,14 +189,14 @@
 </div><div class="content">
         <div class="wrap">
             <!--Main Page Content-->
-            <table id="wrap">
+            <table>
                 <tr>
-                    <td style="vertical-align:top;">
+                    <td style="vertical-align:top;" id="wrap">
                         <b><a href="https://shrinefox.com/"><i class="fa fa-home" aria-hidden="true"></i> ShrineFox.com</a> > Resources > Browse Mods & Tools</b><br><br><!--Result Count and Submission Link-->
 <table style="padding: 0 20px 0 15px;">
     <tbody>
         <tr>
-            <td width="25%">Page 66/70 (1048 results)</td>
+            <td width="25%">Page 66/71 (1051 results)</td>
             <td width="50%" style="text-align: right;">
                 <a href="https://shrinefox.com/forum/viewtopic.php?f=4&amp;t=682&amp;p=2649#p2649">
                     <i class="fa fa-upload" aria-hidden="true"></i> How to Submit
@@ -207,6 +209,126 @@
 <br>
 <!--Post Grid-->
 <div class="cards"><div class="toggle">
+    <div class="toggle-title">
+        <table cellspacing="0">
+            <tr class="post">
+                <td>
+                    <div id="cheatsmt3-480p" class="cheatcode"><br>//480P RESOLUTION// NOP out old interlaced field switchpatch=1,EE,002AA1B4,word,00000000// Another field switch here that needs to be NOP'd to prevent// post processing effects from getting misaligned when entering// and leaving menus.patch=1,EE,002ADBE0,word,00000000// Patch sceGsResetGraph arguments to set 480ppatch=1,EE,002C81D4,word,24110000 // addiu $s1, 0, 0x00patch=1,EE,002C81D8,word,24120050 // addiu $s2, 0, 0x50patch=1,EE,002C81DC,word,24020001 // addiu $s3, 0, 0x0/</div>
+                </td>
+                <td>
+                    <b>480p Resolution</b>
+                </td>
+                <td>
+                    SMT3 Cheat
+                </td>
+                <td>
+                    <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                </td>
+                <td>
+                    6/9/2018 (updated)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="toggle-inner">
+        <table cellspacing="0">
+            <tr>
+                <td class="postinner">
+                    <a href="javascript:copyDivToClipboard('cheatsmt3-480p')"><div id="cheatsmt3-480p" class="cheatcode"><br>//480P RESOLUTION// NOP out old interlaced field switchpatch=1,EE,002AA1B4,word,00000000// Another field switch here that needs to be NOP'd to prevent// post processing effects from getting misaligned when entering// and leaving menus.patch=1,EE,002ADBE0,word,00000000// Patch sceGsResetGraph arguments to set 480ppatch=1,EE,002C81D4,word,24110000 // addiu $s1, 0, 0x00patch=1,EE,002C81D8,word,24120050 // addiu $s2, 0, 0x50patch=1,EE,002C81DC,word,24020001 // addiu $s3, 0, 0x0/</div></a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                        <br><br>Tags:
+                        <br>
+                    </span>
+                </td>
+                <td class="postinner">
+                    Upscale graphics to 480p natively.
+                </td>
+            </tr>
+        </table>
+    </div>
+</div><div class="toggle">
+    <div class="toggle-title">
+        <table cellspacing="0">
+            <tr class="post">
+                <td>
+                    <div id="cheatp4-nolevellimit" class="cheatcode"><br>// All Persona can be fused without Level restrictionpatch=1,EE,202ef884,word,24010000patch=1,EE,202f055c,word,24010000patch=1,EE,202f5350,word,24010000patch=1,EE,202f6314,word,24010000patch=1,EE,202f8d3c,word,24010000patch=1,EE,202f9798,word,24010000</div>
+                </td>
+                <td>
+                    <b>No Level Limit When Fusing Persona</b>
+                </td>
+                <td>
+                    P4 Cheat
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    6/9/2018 (updated)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="toggle-inner">
+        <table cellspacing="0">
+            <tr>
+                <td class="postinner">
+                    <a href="javascript:copyDivToClipboard('cheatp4-nolevellimit')"><div id="cheatp4-nolevellimit" class="cheatcode"><br>// All Persona can be fused without Level restrictionpatch=1,EE,202ef884,word,24010000patch=1,EE,202f055c,word,24010000patch=1,EE,202f5350,word,24010000patch=1,EE,202f6314,word,24010000patch=1,EE,202f8d3c,word,24010000patch=1,EE,202f9798,word,24010000</div></a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                        <br><br>Tags:
+                        <br>
+                    </span>
+                </td>
+                <td class="postinner">
+                    This cheat removes the player level limitation when fusing Personas. https://i.imgur.com/5I5Vos8.png
+                </td>
+            </tr>
+        </table>
+    </div>
+</div><div class="toggle">
+    <div class="toggle-title">
+        <table cellspacing="0">
+            <tr class="post">
+                <td>
+                    <div id="cheatp4-maxcompendiumlvlstats" class="cheatcode"><br>// All Persona Level Max in Compendium Book//patch=1,EE,40798200,extended,00BF000C//patch=1,EE,00000063,extended,00000000// All Persona Max Stats in Compendium Bookpatch=1,EE,40798218,extended,00BF000Cpatch=1,EE,63636363,extended,00000000patch=1,EE,4079821C,extended,00BF000Cpatch=1,EE,63636363,extended,00000000patch=1,EE,40798220,extended,00BF000Cpatch=1,EE,00006363,extended,00000000</div>
+                </td>
+                <td>
+                    <b>Compendium Personas Max Stats/Level</b>
+                </td>
+                <td>
+                    P4 Cheat
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    6/9/2018 (updated)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="toggle-inner">
+        <table cellspacing="0">
+            <tr>
+                <td class="postinner">
+                    <a href="javascript:copyDivToClipboard('cheatp4-maxcompendiumlvlstats')"><div id="cheatp4-maxcompendiumlvlstats" class="cheatcode"><br>// All Persona Level Max in Compendium Book//patch=1,EE,40798200,extended,00BF000C//patch=1,EE,00000063,extended,00000000// All Persona Max Stats in Compendium Bookpatch=1,EE,40798218,extended,00BF000Cpatch=1,EE,63636363,extended,00000000patch=1,EE,4079821C,extended,00BF000Cpatch=1,EE,63636363,extended,00000000patch=1,EE,40798220,extended,00BF000Cpatch=1,EE,00006363,extended,00000000</div></a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                        <br><br>Tags:
+                        <br>
+                    </span>
+                </td>
+                <td class="postinner">
+                    All Personas in the compendium will have maxed out stats/level.
+                </td>
+            </tr>
+        </table>
+    </div>
+</div><div class="toggle">
     <div class="toggle-title">
         <table cellspacing="0">
             <tr class="post">
@@ -682,126 +804,6 @@
                 </td>
                 <td class="postinner">
                     This cheat attempts to remove the motion blur in the game. However, it has the side effect of making the game appear darker.
-                </td>
-            </tr>
-        </table>
-    </div>
-</div><div class="toggle">
-    <div class="toggle-title">
-        <table cellspacing="0">
-            <tr class="post">
-                <td>
-                    <div id="cheatp4-partymod" class="cheatcode">// Party Member 2 Modpatch=1,EE,1079B690,extended,000000??// Party Member 3 Modpatch=1,EE,1079B692,extended,000000??// Party Member 4 Modpatch=1,EE,1079B694,extended,000000??</div>
-                </td>
-                <td>
-                    <b>Party Member Mod</b>
-                </td>
-                <td>
-                    P4 Cheat
-                </td>
-                <td>
-                    
-                </td>
-                <td>
-                    6/9/2018 (updated)
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="toggle-inner">
-        <table cellspacing="0">
-            <tr>
-                <td class="postinner">
-                    <a href="javascript:copyDivToClipboard('cheatp4-partymod')"><div id="cheatp4-partymod" class="cheatcode">// Party Member 2 Modpatch=1,EE,1079B690,extended,000000??// Party Member 3 Modpatch=1,EE,1079B692,extended,000000??// Party Member 4 Modpatch=1,EE,1079B694,extended,000000??</div></a>
-                    <br><br>
-                    <span class="tags-links">
-                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                        <br><br>Tags:
-                        <br>
-                    </span>
-                </td>
-                <td class="postinner">
-                    These cheats allow you to change the value of the other characters currently in your party. This has the unintended side effect of them following you even outside of the dungeon.<br>00 None<br>01 Protagonist (Crashes the game)<br>02 Yosuke<br>03 Chie<br>04 Yukiko<br>05 Rise (Crashes the game)<br>06 Kanji<br>07 Naoto<br>08 Teddie<br>09 Koromaru
-                </td>
-            </tr>
-        </table>
-    </div>
-</div><div class="toggle">
-    <div class="toggle-title">
-        <table cellspacing="0">
-            <tr class="post">
-                <td>
-                    <div id="cheatp4-maxpersonastats" class="cheatcode">//Enable Code patch=1,EE,F0511884,extended,00511887patch=1,EE,2017F6B8,word,24420001//Hero Persona Max Statspatch=1,EE,40836BC8,extended,000C000Dpatch=1,EE,63636363,extended,00000000patch=1,EE,40836BCC,extended,000C000Dpatch=1,EE,00000063,extended,00000000</div>
-                </td>
-                <td>
-                    <b>Max Persona Stats (MC)</b>
-                </td>
-                <td>
-                    P4 Cheat
-                </td>
-                <td>
-                    
-                </td>
-                <td>
-                    6/9/2018 (updated)
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="toggle-inner">
-        <table cellspacing="0">
-            <tr>
-                <td class="postinner">
-                    <a href="javascript:copyDivToClipboard('cheatp4-maxpersonastats')"><div id="cheatp4-maxpersonastats" class="cheatcode">//Enable Code patch=1,EE,F0511884,extended,00511887patch=1,EE,2017F6B8,word,24420001//Hero Persona Max Statspatch=1,EE,40836BC8,extended,000C000Dpatch=1,EE,63636363,extended,00000000patch=1,EE,40836BCC,extended,000C000Dpatch=1,EE,00000063,extended,00000000</div></a>
-                    <br><br>
-                    <span class="tags-links">
-                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                        <br><br>Tags:
-                        <br>
-                    </span>
-                </td>
-                <td class="postinner">
-                    This cheat gives the protagonist's currently equipped Persona maximum stats.
-                </td>
-            </tr>
-        </table>
-    </div>
-</div><div class="toggle">
-    <div class="toggle-title">
-        <table cellspacing="0">
-            <tr class="post">
-                <td>
-                    <div id="cheatp4-maxsocialstats" class="cheatcode">// Max Courage//patch=1,EE,007973F4,word,000000FF// Max Knowledge//patch=1,EE,007973F6,word,000000FF// Max Diligence//patch=1,EE,007973F8,word,000000FF// Max Understanding//patch=1,EE,007973FA,word,000000FF// Max Expression//patch=1,EE,007973FC,word,000000FF</div>
-                </td>
-                <td>
-                    <b>Max Social Stats</b>
-                </td>
-                <td>
-                    P4 Cheat
-                </td>
-                <td>
-                    
-                </td>
-                <td>
-                    6/9/2018 (updated)
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="toggle-inner">
-        <table cellspacing="0">
-            <tr>
-                <td class="postinner">
-                    <a href="javascript:copyDivToClipboard('cheatp4-maxsocialstats')"><div id="cheatp4-maxsocialstats" class="cheatcode">// Max Courage//patch=1,EE,007973F4,word,000000FF// Max Knowledge//patch=1,EE,007973F6,word,000000FF// Max Diligence//patch=1,EE,007973F8,word,000000FF// Max Understanding//patch=1,EE,007973FA,word,000000FF// Max Expression//patch=1,EE,007973FC,word,000000FF</div></a>
-                    <br><br>
-                    <span class="tags-links">
-                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                        <br><br>Tags:
-                        <br>
-                    </span>
-                </td>
-                <td class="postinner">
-                    These cheats give you the maximum level of points for each social stat.
                 </td>
             </tr>
         </table>

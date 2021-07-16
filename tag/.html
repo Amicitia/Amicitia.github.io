@@ -26,7 +26,7 @@
                 <input type="checkbox" id="../css3menu-switcher" class="c3m-switch-input">
                 <ul id="css3menu0" class="topmenu">
                     <li class="switch"><label onclick="" for="../css3menu-switcher"></label></li>
-                    <li class="topmenu"><a href="https://shrinefox.com" style="height:37px;line-height:37px;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li class="toproot"><a href="https://shrinefox.com" style="height:37px;line-height:37px;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li class="toproot">
                         <a style="height:37px;line-height:37px;"><span><i class="fa fa-cube" aria-hidden="true"></i> Resources <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
                         <ul>
@@ -47,7 +47,9 @@
                         </ul>
                     </li>
                     <li class="toproot" style="margin-left: 10px; position: relative;">
-                        <a id="sidebartoggle" style="height:20px;"><span><i class="fa fa-user-circle"></i> Profile <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
+                        <a id="sidebartoggle">
+                            <i class="fa fa-user-circle"></i> Profile
+                        </a>
                         <ul style="padding: 0 !important; -webkit-box-shadow: none !important; box-shadow: none !important; ">
                             <div>
                                 <div class="sidebar">
@@ -109,7 +111,7 @@
                         <ul>
                             <li><a href="https://shrinefox.com/news"><i class="fa fa-newspaper" aria-hidden="true"></i> News</a></li>
                             <li><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Guides</a></li>
-                            <li><a href="https://shrinefox.com"><i class="fab fa-wordpress" aria-hidden="true"></i> Blog</a></li>
+                            <li><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress" aria-hidden="true"></i> Blog</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -187,14 +189,14 @@
 </div><div class="content">
         <div class="wrap">
             <!--Main Page Content-->
-            <table id="wrap">
+            <table>
                 <tr>
-                    <td style="vertical-align:top;">
+                    <td style="vertical-align:top;" id="wrap">
                         <b><a href="https://shrinefox.com/"><i class="fa fa-home" aria-hidden="true"></i> ShrineFox.com</a> > Resources > Browse Mods & Tools</b><br><br><!--Result Count and Submission Link-->
 <table style="padding: 0 20px 0 15px;">
     <tbody>
         <tr>
-            <td width="25%">Page 1/4 (50 results)</td>
+            <td width="25%">Page 1/4 (51 results)</td>
             <td width="50%" style="text-align: right;">
                 <a href="https://shrinefox.com/forum/viewtopic.php?f=4&amp;t=682&amp;p=2649#p2649">
                     <i class="fa fa-upload" aria-hidden="true"></i> How to Submit
@@ -207,6 +209,46 @@
 <br>
 <!--Post Grid-->
 <div class="cards"><div class="toggle">
+    <div class="toggle-title">
+        <table cellspacing="0">
+            <tr class="post">
+                <td>
+                    <img src="https://images.gamebanana.com/img/ss/mods/60eec0309f91a.jpg">
+                </td>
+                <td>
+                    <b>Remove Distortion Filter</b>
+                </td>
+                <td>
+                    CFB Mod
+                </td>
+                <td>
+                    <a href="https://amicitia.github.io/author/DniweTamp">DniweTamp</a>
+                </td>
+                <td>
+                    07/14/2021
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="toggle-inner">
+        <table cellspacing="0">
+            <tr>
+                <td class="postinner">
+                    <a href="https://images.gamebanana.com/img/ss/mods/60eec0309f91a.jpg"><img src="https://images.gamebanana.com/img/ss/mods/60eec0309f91a.jpg"></a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://gamebanana.com/mods/304774" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                        <br><br>Tags:
+                        <br>
+                    </span>
+                </td>
+                <td class="postinner">
+                    Removes distortion filter at the edges of the screen during Vincent's nightmares
+                </td>
+            </tr>
+        </table>
+    </div>
+</div><div class="toggle">
     <div class="toggle-title">
         <table cellspacing="0">
             <tr class="post">
@@ -762,46 +804,6 @@
                 </td>
                 <td class="postinner">
                      
-                </td>
-            </tr>
-        </table>
-    </div>
-</div><div class="toggle">
-    <div class="toggle-title">
-        <table cellspacing="0">
-            <tr class="post">
-                <td>
-                    <div id="cheatsmt3-480p" class="cheatcode"><br>//480P RESOLUTION// NOP out old interlaced field switchpatch=1,EE,002AA1B4,word,00000000// Another field switch here that needs to be NOP'd to prevent// post processing effects from getting misaligned when entering// and leaving menus.patch=1,EE,002ADBE0,word,00000000// Patch sceGsResetGraph arguments to set 480ppatch=1,EE,002C81D4,word,24110000 // addiu $s1, 0, 0x00patch=1,EE,002C81D8,word,24120050 // addiu $s2, 0, 0x50patch=1,EE,002C81DC,word,24020001 // addiu $s3, 0, 0x0/</div>
-                </td>
-                <td>
-                    <b>480p Resolution</b>
-                </td>
-                <td>
-                    SMT3 Cheat
-                </td>
-                <td>
-                    <a href="https://amicitia.github.io/author/TGE">TGE</a>
-                </td>
-                <td>
-                    6/9/2018 (updated)
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="toggle-inner">
-        <table cellspacing="0">
-            <tr>
-                <td class="postinner">
-                    <a href="javascript:copyDivToClipboard('cheatsmt3-480p')"><div id="cheatsmt3-480p" class="cheatcode"><br>//480P RESOLUTION// NOP out old interlaced field switchpatch=1,EE,002AA1B4,word,00000000// Another field switch here that needs to be NOP'd to prevent// post processing effects from getting misaligned when entering// and leaving menus.patch=1,EE,002ADBE0,word,00000000// Patch sceGsResetGraph arguments to set 480ppatch=1,EE,002C81D4,word,24110000 // addiu $s1, 0, 0x00patch=1,EE,002C81D8,word,24120050 // addiu $s2, 0, 0x50patch=1,EE,002C81DC,word,24020001 // addiu $s3, 0, 0x0/</div></a>
-                    <br><br>
-                    <span class="tags-links">
-                        <a href="POSTURL" style="width:-webkit-fill-available;text-align:center;font-size:15pt;max-width:100%;padding:20px 0 20px 0;"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                        <br><br>Tags:
-                        <br>
-                    </span>
-                </td>
-                <td class="postinner">
-                    Upscale graphics to 480p natively.
                 </td>
             </tr>
         </table>

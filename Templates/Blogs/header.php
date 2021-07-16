@@ -21,7 +21,7 @@
 </head>
 <!--INDEXAFTERHEADER-->
 <center>
-	<a href="https://shrinefox.com/forum">
+	<a href="https://shrinefox.com/<?php echo get_bloginfo('wpurl') ?>">
 		<img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;">
 		<br><h1>ShrineFox</h1>
 		<h2>Blog</h2>

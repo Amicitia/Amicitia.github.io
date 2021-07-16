@@ -43,7 +43,7 @@
                 <input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
                 <ul id="css3menu0" class="topmenu">
                     <li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
-                    <li class="topmenu"><a href="https://shrinefox.com" style="height:37px;line-height:37px;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li class="toproot"><a href="https://shrinefox.com" style="height:37px;line-height:37px;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li class="toproot">
                         <a style="height:37px;line-height:37px;"><span><i class="fa fa-cube" aria-hidden="true"></i> Resources <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
                         <ul>
@@ -128,7 +128,7 @@
                         <ul>
                             <li><a href="https://shrinefox.com/news"><i class="fa fa-newspaper" aria-hidden="true"></i> News</a></li>
                             <li><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Guides</a></li>
-                            <li><a href="https://shrinefox.com"><i class="fab fa-wordpress" aria-hidden="true"></i> Blog</a></li>
+                            <li><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress" aria-hidden="true"></i> Blog</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -139,7 +139,7 @@
                 <div class="header-inner">
                     <!--Title-->
 <center>
-	<a href="https://shrinefox.com/forum">
+	<a href="https://shrinefox.com/<?php echo get_bloginfo('wpurl') ?>">
 		<img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;">
 		<br><h1>Amicitia</h1>
 		<h2>News</h2>
@@ -170,9 +170,9 @@
     <div class="content">
         <div class="">
             <!--Main Page Content-->
-            <table id="">
+            <table>
                 <tr>
-                    <td style="vertical-align:top;">
+                    <td style="vertical-align:top;" id="">
                         
 <?php wp_body_open(); ?>
 <div id="page" class="site">
