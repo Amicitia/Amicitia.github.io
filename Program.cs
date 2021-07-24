@@ -35,13 +35,13 @@ namespace Amicitia.github.io
         {
             // Exe Directory
             indexPath = Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
-#if !DEBUG
+
             // Update .tsv with data from gamebanana
             Task.Run(async () =>
             {
                 await Webscraper.UpdateTSVs(indexPath);
             }).GetAwaiter().GetResult();
-#endif
+
             // Order post post from .tsv files by most recent)
             posts = Post.Get(indexPath).OrderBy(p => DateTime.Parse(p.Date, CultureInfo.CreateSpecificCulture("en-US"))).ToArray().Reverse().ToList();
             // Delete files if they exist already
@@ -68,7 +68,7 @@ namespace Amicitia.github.io
             // Create flowscript docs
             Page.FlowscriptDocs(indexPath);
             // Create 404/forum/guides/files pages
-            Page.Misc(indexPath);
+            //Page.Misc(indexPath);
 
             Console.WriteLine("Done!");
             Console.ReadKey();
