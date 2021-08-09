@@ -68,7 +68,7 @@ namespace Amicitia.github.io.PageCreator
                 pageName = "Mods & Resources";
 
             html += $"<title>{pageName}</title>";
-            html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader 
+            html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader
                 + $"<center><a href=\"https://amicitia.github.io\"><img src=\"https://amicitia.github.io/images/logo.svg\" " +
                 $"style=\"width:150px;height:150px;\"><h1>{pageName}</h1></a></center>"
                 + Properties.Resources.IndexBeforeContent + "<b><a href=\"https://shrinefox.com/\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> > Resources > Browse Mods & Tools</b><br><br>";
@@ -178,14 +178,14 @@ namespace Amicitia.github.io.PageCreator
                 html += Properties.Resources.IndexSidebar + Properties.Resources.IndexFooter;
                 File.WriteAllText(Path.Combine(indexPath, page + ".html"), html);
             }
-            
+
             string forumThemePath = Path.Combine(indexPath, "forum//styles//prolight//template");
             // Overall Header
             string header = Properties.Resources.overall_header;
             header = header.Replace("<!--INDEXHEADER-->", Properties.Resources.IndexHeader.Replace("https://amicitia.github.io/", "https://shrinefox.com/"));
             header = header.Replace("<!--INDEXAFTERHEADER-->", Properties.Resources.IndexAfterHeader.Replace("<!--Notifications-->", Properties.Resources.LoginAndNotifications).Replace("<i class=\"fa fa-user-circle\"></i> Profile", "<!-- IF not S_USER_LOGGED_IN --><i class=\"fa fa-user-circle\"></i><!-- ELSE --><!-- IF CURRENT_USER_AVATAR --><a class=\"header-profile header-avatar has-avatar\">{CURRENT_USER_AVATAR}<strong class=\"badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->\">{NOTIFICATIONS_COUNT}</strong><span style=\"left:26px;position:relative;margin-right:20px;top:-5px;\">Profile </span></a><!-- ELSE --><a class=\"header-profile header-avatar no-avatar\"><strong class=\"badge header-profile-badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->\">{NOTIFICATIONS_COUNT}</strong></a><!-- ENDIF --><!-- ENDIF -->"));
             header = header.Replace("<!--INDEXBEFORECONTENT-->", Properties.Resources.IndexBeforeContent);
-            header = header.Replace("</div>\r\n<!--Top End-->", "").Replace("</div> <!--End Contents-->", "").Replace("</div> <!--End Component-->","").Replace("</div> <!--End Sidebar-->","");
+            header = header.Replace("</div>\r\n<!--Top End-->", "").Replace("</div> <!--End Contents-->", "").Replace("</div> <!--End Component-->", "").Replace("</div> <!--End Sidebar-->", "");
             File.WriteAllText(Path.Combine(forumThemePath, "overall_header.html"), header);
             // Overall Footer
             File.WriteAllText(Path.Combine(forumThemePath, "overall_footer.html"), Properties.Resources.IndexFooter.Replace("<!--Footer-->", "</div>\n<!--Footer-->"));
@@ -218,6 +218,44 @@ namespace Amicitia.github.io.PageCreator
             int totalPages = Convert.ToInt32(RoundUp(Convert.ToDecimal(posts.Count) / Convert.ToDecimal(maxPosts), 0)); // Total number of pages
             //For each post...
             bool matchFound = false; //Show more resources if post is a mod or tool
+            var urlSplit = url.Split('\\');
+            if (posts.Count > 0)
+            {
+                /* Create Static Redirect Page to new Site for Google Search */
+                content += posts[0].Description;
+                string link = "";
+                if (urlSplit.Any(x => x.Equals("index")))
+                    link = "type=all";
+                else if (urlSplit.Any(x => x.Equals("post")))
+                    link = $"post={posts[0].Id}";
+                else
+                {
+                    if (urlSplit.Any(x => x.Equals("game")))
+                        link = $"game={urlSplit.First(x => gameList.Any(y => y.Item1.Equals(x.ToLower())))}";
+                    else
+                    {
+                        if (urlSplit.Any(x => x.Equals("mods")))
+                            link += $"&type=mod";
+                        else if (urlSplit.Any(x => x.Equals("tools")))
+                            link += $"&type=tool";
+                        else if (urlSplit.Any(x => x.Equals("guides")))
+                            link += $"&type=guide";
+                        else if (urlSplit.Any(x => x.Equals("cheats")))
+                            link += $"&type=cheat";
+                        if (gameList.Any(x => urlSplit.Any(y => y.Equals(x.Item1))))
+                            link += $"&game={gameList.First(x => urlSplit.Any(y => y.Equals(x.Item1))).Item1}";
+                        if (urlSplit.Any(x => x.Equals("author")))
+                            link = $"author={posts[0].Authors.First(x => url.ToUpper().Contains(x.ToUpper()))}";
+                        if (urlSplit.Any(x => x.Equals("tag")))
+                            link = $"tag={posts[0].Tags.First(x => url.ToUpper().Contains(x.ToUpper()))}";
+                    }
+                }
+                link = link.TrimStart('&');
+                content += "<meta http-equiv=\"refresh\" content=\"0;URL=https://shrinefox.com/browse?" + link + "\">";
+
+                Create(content, $"{url}.html", 1, false);
+            }
+            /*
             for (int i = 0; i < posts.Count; i++)
             {
                 //Start of page
@@ -268,6 +306,7 @@ namespace Amicitia.github.io.PageCreator
                     pages++;
                 }
             }
+            */
         }
 
         public static void CreateGames(List<Post> posts)
