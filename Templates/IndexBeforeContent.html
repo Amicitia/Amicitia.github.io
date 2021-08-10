@@ -1,29 +1,147 @@
-            <!--Waves-->
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0"></use>
-            <use xlink:href="#gentle-wave" x="48" y="3"></use>
-            <use xlink:href="#gentle-wave" x="48" y="5"></use>
-            <use xlink:href="#gentle-wave" x="48" y="7"></use>
-        </g>
-    </svg>
-</div>
-<!--Waves End-->
-<!--Header End-->
-    </div>
-<!--Navbar End-->
-</div>
-<!--Top End-->
-<!--Middle-->
-<div class="row middle">
-    <!--Page Body-->
-    <div class="content">
-        <div class="wrap">
-            <!--Main Page Content-->
-            <table>
-                <tr>
-                    <td style="vertical-align:top;" id="wrap">
-                        
+<body>
+    <div id="page-wrapper">
+        <!--Navbar-->
+        <section id="header" class="section scrolled">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="https://shrinefox.com" class="navbar-brand mr-10">
+                            <!--Logo-->
+                            <svg version="1.0" class="amicitialogo" xmlns="http://www.w3.org/2000/svg"
+                                 width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
+                                 preserveAspectRatio="xMidYMid meet">
+                                <metadata>
+                                </metadata>
+                                <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+                                   fill="#ffffff" stroke="none">
+                                    <path d="M2256 4489 c-926 -119 -1651 -850 -1766 -1779 -15 -125 -12 -405 5
+                                            -529 65 -450 258 -836 579 -1157 67 -66 164 -152 216 -191 136 -100 310 -203
+                                            343 -203 14 0 48 114 141 481 l43 166 -143 246 c-78 136 -141 247 -139 247 15
+                                            0 424 113 442 122 12 6 20 14 18 18 -2 4 30 132 71 286 41 153 120 445 174
+                                            647 l99 369 -143 246 c-121 208 -141 248 -126 254 9 3 113 32 232 63 210 56
+                                            215 58 215 84 1 14 37 160 82 324 44 165 78 303 75 308 -7 11 -325 9 -418 -2z" />
+                                    <path d="M3135 3840 c-4 -16 -4 -34 -1 -39 3 -4 -39 -249 -94 -542 -55 -294
+                                            -100 -546 -100 -561 l0 -28 210 0 210 0 0 28 c0 15 -45 267 -100 561 -55 293
+                                            -97 538 -94 542 8 13 -6 69 -16 69 -5 0 -11 -13 -15 -30z" />
+                                    <path d="M2806 2008 c-180 -966 -256 -1368 -261 -1390 l-7 -28 606 0 606 0 0
+                                            23 c0 13 -56 324 -125 693 -69 368 -128 684 -131 702 l-6 32 -338 0 -338 0 -6
+                                            -32z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </section>
+                    <section class="navbar-section desktop-menu">
+                        <nav class="dropmenu animated">
+                            <ul>
+                                <li>
+                                    <a href="https://shrinefox.com" class="homelink">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/browse" class="browselink">
+                                        Browse
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/forum" class="forumlink">
+                                        Forum
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/wiki" class="wikilink">
+                                        Wiki
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="cursor:pointer;" class="articleslink">
+                                        Articles
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://shrinefox.com/news" class="newslink">
+                                                News
+                                            </a>
+                                            <ul id="news-feed"></ul>
+                                        </li>
+                                        <li>
+                                            <a href="https://shrinefox.com/guides" class="guideslink">
+                                                Guides
+                                            </a>
+                                            <ul id="guides-feed"></ul>
+                                        </li>
+                                        <li>
+                                            <a href="https://shrinefox.com/blog" class="bloglink">
+                                                Blog
+                                            </a>
+                                            <ul id="blog-feed"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/forum/app.php/faqpage" class="faqlink">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/about" class="aboutlink">
+                                        About
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <script>
+            $('#news-feed').FeedEk({
+                FeedUrl: 'https://shrinefox.com/news/feed',
+                MaxCount: 3,
+                ShowDesc: false,
+                ShowPubDate: true,
+                DescCharacterLimit: 0,
+                TitleLinkTarget: '_blank',
+                DateFormat: 'MMM d',
+                DateFormatLang: 'en'
+            });
+
+            $('#guides-feed').FeedEk({
+                FeedUrl: 'https://shrinefox.com/guides/feed',
+                MaxCount: 3,
+                ShowDesc: false,
+                ShowPubDate: true,
+                DescCharacterLimit: 0,
+                TitleLinkTarget: '_blank',
+                DateFormat: 'MMM d',
+                DateFormatLang: 'en'
+            });
+
+            $('#blog-feed').FeedEk({
+                FeedUrl: 'https://shrinefox.com/blog/feed',
+                MaxCount: 3,
+                ShowDesc: false,
+                ShowPubDate: true,
+                DescCharacterLimit: 0,
+                TitleLinkTarget: '_blank',
+                DateFormat: 'MMM d',
+                DateFormatLang: 'en'
+            });
+        </script>
+        <!--Video Background-->
+        <div class="videocontainer">
+            <video autoplay muted loop class="videobg">
+                <source src="https://shrinefox.com/images/waves2.mp4" type="video/mp4">
+            </video>
+            <!--Search-->
+            <div>
+                <script async src="https://cse.google.com/cse.js?cx=38ad766f435ddfed4"></script>
+                <div class="gcse-search"></div>
+            </div>
+        </div>
+        <!--Page Content-->
+        <section id="start">
+            <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                    <table style="width:100%;">
+                        <tr>

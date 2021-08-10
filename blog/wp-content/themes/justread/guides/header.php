@@ -1,8 +1,22 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Justread
+ */
+
+?>
 <!doctype html>
-<html>
-	<head>
-    <link rel='shortcut icon' href='https://amicitia.github.io/images/favicon.png' type='image/x-icon' />
-    <meta charset="utf-8"><title>Amicitia - 404</title><meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js" <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="https://shrinefox.com/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="https://shrinefox.com/css/spectre.min.css">
 <link rel="stylesheet" type="text/css" href="https://shrinefox.com/css/theme.min.css">
@@ -15,7 +29,10 @@
 <script type="text/javascript" src="https://shrinefox.com/js/jscolor.js"></script>
 <script type="text/javascript" src="https://shrinefox.com/js/themes.js"></script>
 <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<meta charset="utf-8"></head><center><a href="https://amicitia.github.io"><img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;"><h1>404</h1></a></center><body>
+<meta charset="utf-8">
+	<?php wp_head(); ?>
+</head>
+<body>
     <div id="page-wrapper">
         <!--Navbar-->
         <section id="header" class="section scrolled">
@@ -71,7 +88,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a style="cursor:pointer;" class="articleslink">
+                                    <a style="cursor:pointer;" class="active">
                                         Articles
                                     </a>
                                     <ul>
@@ -82,7 +99,7 @@
                                             <ul id="news-feed"></ul>
                                         </li>
                                         <li>
-                                            <a href="https://shrinefox.com/guides" class="guideslink">
+                                            <a href="https://shrinefox.com/guides" class="active">
                                                 Guides
                                             </a>
                                             <ul id="guides-feed"></ul>
@@ -162,88 +179,94 @@
                 <section class="container grid-lg">
                     <table style="width:100%;">
                         <tr>
-<b><a href="https://shrinefox.com/"><i class="fa fa-home" aria-hidden="true"></i> ShrineFox.com</a> > Resources > <a href="https://amicitia.github.io">Browse Mods & Tools</a> > Not Found</b><br><meta http-equiv="refresh" content="0;URL=https://shrinefox.com/404"><div class="toggle-btn" onclick="toggleCookie(this)"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i> Explore</div>
+
+<div class="toggle-btn" onclick="toggleCookie(this)"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i> Explore</div>
 <td class="sidebar inactive" id="sidebar">
 	<div class="accordion-container">
-		<!--Accordions-->
+		<div class="accordion">
+    <input id="accordion-guides" type="checkbox" name="guides-accordion-checkbox" hidden="" checked="checked">
+    <label class="accordion-header c-hand" for="accordion-guides"><i class="fa fa-angle-right"></i> Guides</label>
+    <div class="accordion-body">
+        <ul class="menu menu-nav">
+            <div id="guides-latest"></div>
+        </ul>
+    </div>
+</div>
+<script>
+    $('#guides-latest').FeedEk({
+        FeedUrl: 'https://shrinefox.com/guides/feed',
+        MaxCount: 6,
+        ShowDesc: false,
+        ShowPubDate: false,
+        TitleLinkTarget: '_blank'
+    });
+</script>
 	</div>
 </td>
-<td class="maincontent">                        </section>
-                    </section>
-                </section>
-            </td>
-        </tr>
-    </table>
-<!--Footer-->
-<footer>
-    <table>
-        <tbody>
-            <tr>
-                <td id="social_links">
-                    <a href="https://twitter.com/AmicitiaTeam"><i class="fab fa-twitter"></i> AmicitiaTeam</a>
-                    <br><a href="https://reddit.com/r/Amicitia"><i class="fab fa-reddit"></i> r/Amicitia</a>
-                    <br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> Discord</a>
-                </td>
-                <td id="site_disclaimer">
-                    We are NOT affiliated, associated, authorized, endorsed by, or in any way
-                    officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
-                    The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
-                    registered in the U.S. Patent and Trademark Office. ATLUS, SHIN MEGAMI TENSEI, and PERSONA are
-                    either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
-                    <!--Theme Select-->
-                    <br><br>Theme:
-                    <select id="theme" name="theme" onchange="ThemeToggle()">
-                        <option value="" selected>Default</option>
-                        <option value="Blue">Blue</option>
-                        <option value="Blue Dark">Blue Dark</option>
-                        <option value="Red">Red</option>
-                        <option value="Red Dark">Red Dark</option>
-                        <option value="Green">Green</option>
-                        <option value="Green Dark">Green Dark</option>
-                        <option value="Yellow">Yellow</option>
-                        <option value="Berry">Berry</option>
-                        <option value="Custom">Custom</option>
-                    </select>
-                    <!--Color Picker-->
-                    <script>
-                        jscolor.presets.default = {
-                            format: 'rgb', previewSize: 20, paletteCols: 1,
-                            backgroundColor: 'rgb(var(--post))', borderColor: 'rgb(var(--post))',
-                            padding: 5, width: 100, height: 100, mode: 'HVS',
-                            controlBorderColor: 'rgb(var(--post))', sliderSize: 8, shadow: false
-                        };
-                    </script>
-                    <div id="colorpicker" style="display:none;">
-                        <div class="toggle">
-                            <div class="toggle-title" style="cursor: pointer;" onclick="updateColorPicker()">
-                                <a><i class="fa fa-gears"></i> Theme Settings</a>
-                            </div>
-                            <div class="toggle-inner">
-                                <br><button id="customtext" data-jscolor="{onChange: 'updateText(this)',value:'rgb(var(--text))', alpha:1}">Text</button>
-                                <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
-                                <br><button id="customwaves" data-jscolor="{onChange: 'updateWaves(this)',value:'rgb(var(--waves))', alpha:1}">Waves</button>
-                                <br><button id="customwaves2" data-jscolor="{onChange: 'updateWaves2(this)',value:'rgb(var(--waves2))', alpha:1}">Waves 2</button>
-                                <br><button id="customsearchtext" data-jscolor="{onChange: 'updateSearchText(this)',value:'rgb(var(--searchtext))', alpha:1}">Search Text</button>
-                                <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Post BG</button>
-                            </div>
-                        </div>
-                    </div>
-                </td>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <center>
-        <div class="ad">
-            <!--AdSense-->
-            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-        <!--Credits-->
-        <br>ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee"></i> Support</a> | <a href="https://trello.com/b/mXTXRmpR/shrinefox-to-do">Track Progress</a>
-        <br>
-    </center>
-    <!--End Footer-->
-</footer>
-</div>
+<td class="maincontent">
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'justread' ); ?></a>
+
+	<div class="form-wrapper" id="form-wrapper">
+		<button
+			class="search-close" id="search-close"
+			<?php if ( justread_is_amp() ) : ?>
+				on="tap:form-wrapper.toggleClass( class='is-visible', force=false )"
+			<?php endif; ?>
+		>&times;</button>
+		<?php get_search_form(); ?>
+	</div>
+
+	<header id="masthead" class="site-header">
+		<div class="navbar">
+			<div class="site-branding">
+				<?php
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+				else :
+					?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php
+				endif;
+
+				$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo wp_kses_post( $description ); ?></p>
+				<?php endif; ?>
+			</div><!-- .site-branding -->
+
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'menu_class'     => 'menu',
+						'container'      => '',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+		</div>
+		<div class="social-icons">
+			<?php
+			if ( function_exists( 'jetpack_social_menu' ) ) {
+				jetpack_social_menu();
+			}
+			?>
+			<button
+				class="search-toggle" aria-controls="form-wrapper" aria-expanded="false"
+				<?php if ( justread_is_amp() ) : ?>
+					on="tap:form-wrapper.toggleClass( class='is-visible' )"
+				<?php endif; ?>
+			><?php echo justread_get_svg( array( 'icon' => 'search' ) ); // wpcs xss: ok. ?></button>
+			<button id="site-navigation-open" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'justread' ); ?></button>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">

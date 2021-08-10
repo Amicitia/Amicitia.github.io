@@ -1,0 +1,44 @@
+﻿<div class="accordion">
+    <input id="accordion-forum" type="checkbox" name="forum-accordion-checkbox" hidden="" checked="checked">
+    <label class="accordion-header c-hand" for="accordion-forum"><i class="fa fa-angle-right"></i> Community</label>
+    <div class="accordion-body">
+        <ul class="menu menu-nav">
+            <li class="menu-item">
+                <a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x">{L_LOGIN_LOGOUT}</a>
+            </li>
+            <!-- IF U_ACP -->
+            <li class="menu-item">
+                <a href="{U_ACP}">Admin Control Panel</a>
+            </li>
+            <!-- ENDIF -->
+            <!-- IF U_MCP -->
+            <li class="menu-item">
+                <a href="{U_MCP}">Moderator Control Panel</a>
+            </li>
+            <!-- ENDIF -->
+            <li class="menu-item">
+                <a href="https://shrinefox.com/forum/search.php">Search</a>
+            </li>
+            <!-- IF S_NOTIFICATIONS_DISPLAY -->
+            <li class="menu-item">
+                <a href="https://shrinefox.com/forum/ucp.php?i=ucp_notifications">Notifications ({NOTIFICATIONS_COUNT})</a>
+            </li>
+            <!-- ENDIF -->
+            <li class="menu-item">
+                <a href="https://shrinefox.com/forum/ucp.php?i=pm&folder=inbox">Inbox</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/forum/ucp.php">Account Settings</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/forum/search.php?search_id=active_topics">Active Threads</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/forum/search.php?search_id=egosearch">Your Posts</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/apps/UpdateCreator">Unread Posts</a>
+            </li>
+        </ul>
+    </div>
+</div>

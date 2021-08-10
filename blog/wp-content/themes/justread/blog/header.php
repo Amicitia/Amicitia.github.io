@@ -16,164 +16,194 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<script src="https://shrinefox.com/js/jquery-3.3.1.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
-<script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<link href="https://shrinefox.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-<link href="https://shrinefox.com/css/amicitia.css" rel="stylesheet" type="text/css">
-<script src="https://shrinefox.com/js/bubbles.js"></script>
-<script src="https://shrinefox.com/js/clipboard.js"></script>
-<script src="https://shrinefox.com/js/showhide.js"></script>
-<script src="https://shrinefox.com/js/navigation.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="https://shrinefox.com/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://shrinefox.com/css/spectre.min.css">
+<link rel="stylesheet" type="text/css" href="https://shrinefox.com/css/theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://shrinefox.com/css/custom.css">
+<link rel="stylesheet" type="text/css" href="https://shrinefox.com/css/ytv.css">
+<script type="text/javascript" src="https://shrinefox.com/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://kit.fontawesome.com/4c3075832a.js"></script>
+<script type="text/javascript" src="https://shrinefox.com/js/togglesidebar.js"></script>
 <script type="text/javascript" src="https://shrinefox.com/js/FeedEk.min.js"></script>
 <script type="text/javascript" src="https://shrinefox.com/js/jscolor.js"></script>
-<link rel="stylesheet" href="https://shrinefox.com/css/css3menu.css" type="text/css" />
-<style type="text/css">._css3m {display: none;}</style>
+<script type="text/javascript" src="https://shrinefox.com/js/themes.js"></script>
+<script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
 	<?php wp_head(); ?>
 </head>
-<body style="background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;">
-    <!--Copied Message-->
-    <div class="copied">Copied to Clipboard</div>
-    <div class="flex">
-        <!--TopRow-->
-        <div class="row top">
-            <!--Navbar-->
-            <div class="navbar">
-                <input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
-                <ul id="css3menu0" class="topmenu">
-                    <li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
-                    <li class="toproot"><a href="https://shrinefox.com" style="height:37px;line-height:37px;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                    <li class="toproot">
-                        <a style="height:37px;line-height:37px;"><span><i class="fa fa-cube" aria-hidden="true"></i> Resources <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
-                        <ul>
-                            <li><a href="https://amicitia.github.io"><i class="fa fa-download" aria-hidden="true"></i> Browse Mods & Tools</a></li>
-                            <li><a href="https://shrinefox.com/PatchCreator"><i class="fa fa-check-square" aria-hidden="true"></i> RPCS3 Patch Creator</a></li>
-                            <li><a href="https://shrinefox.com/UpdateCreator"><i class="fa fa-check-square" aria-hidden="true"></i> PS4 Patch Creator</a></li>
-                            <li><a href="https://shrinefox.com/textsearch"><i class="fab fa-searchengin" aria-hidden="true"></i> Text Search</a></li>
-                            <li><a href="https://amicitia.github.io/files"><i class="fa fa-folder-open" aria-hidden="true"></i> Files</a></li>
-                            <li><a href="https://amicitia.github.io/docs/flowscript"><i class="fa fa-file-code" aria-hidden="true"></i> Flowscript Docs</a></li>
-                        </ul>
-                    </li>
-                    <li class="toproot">
-                        <a style="height:37px;line-height:37px;"><span><i class="fa fa-users" aria-hidden="true"></i> Community <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
-                        <ul>
-                            <li><a href="https://shrinefox.com/forum"><i class="fa fa-comments" aria-hidden="true"></i> Forum</a></li>
-                            <li><a href="https://shrinefox.com/wiki"><i class="fa fa-book" aria-hidden="true"></i> Wiki</a></li>
-                            <li><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord" aria-hidden="true"></i> Discord</a></li>
-                        </ul>
-                    </li>
-                    <li class="toproot" style="margin-left: 10px; position: relative;">
-                        <a id="sidebartoggle">
-                            <i class="fa fa-user-circle"></i> Profile
+<body>
+    <div id="page-wrapper">
+        <!--Navbar-->
+        <section id="header" class="section scrolled">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="https://shrinefox.com" class="navbar-brand mr-10">
+                            <!--Logo-->
+                            <svg version="1.0" class="amicitialogo" xmlns="http://www.w3.org/2000/svg"
+                                 width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
+                                 preserveAspectRatio="xMidYMid meet">
+                                <metadata>
+                                </metadata>
+                                <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+                                   fill="#ffffff" stroke="none">
+                                    <path d="M2256 4489 c-926 -119 -1651 -850 -1766 -1779 -15 -125 -12 -405 5
+                                            -529 65 -450 258 -836 579 -1157 67 -66 164 -152 216 -191 136 -100 310 -203
+                                            343 -203 14 0 48 114 141 481 l43 166 -143 246 c-78 136 -141 247 -139 247 15
+                                            0 424 113 442 122 12 6 20 14 18 18 -2 4 30 132 71 286 41 153 120 445 174
+                                            647 l99 369 -143 246 c-121 208 -141 248 -126 254 9 3 113 32 232 63 210 56
+                                            215 58 215 84 1 14 37 160 82 324 44 165 78 303 75 308 -7 11 -325 9 -418 -2z" />
+                                    <path d="M3135 3840 c-4 -16 -4 -34 -1 -39 3 -4 -39 -249 -94 -542 -55 -294
+                                            -100 -546 -100 -561 l0 -28 210 0 210 0 0 28 c0 15 -45 267 -100 561 -55 293
+                                            -97 538 -94 542 8 13 -6 69 -16 69 -5 0 -11 -13 -15 -30z" />
+                                    <path d="M2806 2008 c-180 -966 -256 -1368 -261 -1390 l-7 -28 606 0 606 0 0
+                                            23 c0 13 -56 324 -125 693 -69 368 -128 684 -131 702 l-6 32 -338 0 -338 0 -6
+                                            -32z" />
+                                </g>
+                            </svg>
                         </a>
-                        <ul style="padding: 0 !important; -webkit-box-shadow: none !important; box-shadow: none !important; ">
-                            <div>
-                                <div class="sidebar">
-                                    <div class="component">
-                                        <div class="contents">
-                                            <!--Notifications-->
-                                            <li>
-                                                <a href="https://shrinefox.com/forum/ucp.php">
-                                                    <div class="item">
-                                                        <i class="fa fa-address-card"></i> &nbsp;Account Settings
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://shrinefox.com/forum/ucp.php?i=pm&folder=inbox">
-                                                    <div class="item">
-                                                        <i class="fa fa-envelope"></i> &nbsp;Inbox
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://shrinefox.com/forum/search.php">
-                                                    <div class="item">
-                                                        <i class="fa fa-search"></i> &nbsp;Search
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://shrinefox.com/forum/search.php?search_id=egosearch">
-                                                    <div class="item">
-                                                        <i class="fa fa-sticky-note"></i> &nbsp;Your Posts
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://shrinefox.com/forum/search.php?search_id=active_topics">
-                                                    <div class="item">
-                                                        <i class="fa fa-star"></i> &nbsp;Active Threads
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        
-                                    
-                                
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="toproot">
-                        <a style="height:37px;line-height:37px;"><span><i class="fa fa-question-circle" aria-hidden="true"></i> About <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
-                        <ul>
-                            <li><a href="https://shrinefox.com/forum/app.php/faqpage"><i class="fa fa-comment-dots" aria-hidden="true"></i> FAQs</a></li>
-                            <li><a href="https://shrinefox.com/about"><i class="fa fa-address-book" aria-hidden="true"></i> Credits</a></li>
-                            <li><a href="https://youtube.com/c/ShrineFox"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
-                            <li><a href="https://twitter.com/AmicitiaTeam"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                        </ul>
-                    </li>
-                    <li class="toproot">
-                        <a style="height:37px;line-height:37px;"><span><i class="fa fa-newspaper" aria-hidden="true"></i> Articles <i class="fas fa-chevron-down" style="font-size: 6pt;"></i></span></a>
-                        <ul>
-                            <li><a href="https://shrinefox.com/news"><i class="fa fa-newspaper" aria-hidden="true"></i> News</a></li>
-                            <li><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Guides</a></li>
-                            <li><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress" aria-hidden="true"></i> Blog</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!--Header-->
-            <div class="header">
-                <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
-                <div class="header-inner">
-                    <!--Title-->
-<center>
-	<a href="https://shrinefox.com/<?php echo get_bloginfo('wpurl') ?>">
-		<img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;">
-		<br><h1>ShrineFox</h1>
-		<h2>Blog</h2>
-	</a>
-</center>
-</div>
-            <!--Waves-->
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0"></use>
-            <use xlink:href="#gentle-wave" x="48" y="3"></use>
-            <use xlink:href="#gentle-wave" x="48" y="5"></use>
-            <use xlink:href="#gentle-wave" x="48" y="7"></use>
-        </g>
-    </svg>
-</div>
-<!--Waves End-->
-<!--Header End-->
-    </div>
-<!--Navbar End-->
+                    </section>
+                    <section class="navbar-section desktop-menu">
+                        <nav class="dropmenu animated">
+                            <ul>
+                                <li>
+                                    <a href="https://shrinefox.com" class="homelink">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/browse" class="browselink">
+                                        Browse
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/forum" class="forumlink">
+                                        Forum
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/wiki" class="wikilink">
+                                        Wiki
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="cursor:pointer;" class="active">
+                                        Articles
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://shrinefox.com/news" class="newslink">
+                                                News
+                                            </a>
+                                            <ul id="news-feed"></ul>
+                                        </li>
+                                        <li>
+                                            <a href="https://shrinefox.com/guides" class="guideslink">
+                                                Guides
+                                            </a>
+                                            <ul id="guides-feed"></ul>
+                                        </li>
+                                        <li>
+                                            <a href="https://shrinefox.com/blog" class="active">
+                                                Blog
+                                            </a>
+                                            <ul id="blog-feed"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/forum/app.php/faqpage" class="faqlink">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://shrinefox.com/about" class="aboutlink">
+                                        About
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <script>
+            $('#news-feed').FeedEk({
+                FeedUrl: 'https://shrinefox.com/news/feed',
+                MaxCount: 3,
+                ShowDesc: false,
+                ShowPubDate: true,
+                DescCharacterLimit: 0,
+                TitleLinkTarget: '_blank',
+                DateFormat: 'MMM d',
+                DateFormatLang: 'en'
+            });
 
-<!--Middle-->
-<div class="row middle">
-    <!--Page Body-->
-    <div class="content">
-        <div class="">
-            <!--Main Page Content-->
-            <table>
-                <tr>
-                    <td style="vertical-align:top;" id="">
-                        
+            $('#guides-feed').FeedEk({
+                FeedUrl: 'https://shrinefox.com/guides/feed',
+                MaxCount: 3,
+                ShowDesc: false,
+                ShowPubDate: true,
+                DescCharacterLimit: 0,
+                TitleLinkTarget: '_blank',
+                DateFormat: 'MMM d',
+                DateFormatLang: 'en'
+            });
+
+            $('#blog-feed').FeedEk({
+                FeedUrl: 'https://shrinefox.com/blog/feed',
+                MaxCount: 3,
+                ShowDesc: false,
+                ShowPubDate: true,
+                DescCharacterLimit: 0,
+                TitleLinkTarget: '_blank',
+                DateFormat: 'MMM d',
+                DateFormatLang: 'en'
+            });
+        </script>
+        <!--Video Background-->
+        <div class="videocontainer">
+            <video autoplay muted loop class="videobg">
+                <source src="https://shrinefox.com/images/waves2.mp4" type="video/mp4">
+            </video>
+            <!--Search-->
+            <div>
+                <script async src="https://cse.google.com/cse.js?cx=38ad766f435ddfed4"></script>
+                <div class="gcse-search"></div>
+            </div>
+        </div>
+        <!--Page Content-->
+        <section id="start">
+            <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                    <table style="width:100%;">
+                        <tr>
+
+<div class="toggle-btn" onclick="toggleCookie(this)"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i> Explore</div>
+<td class="sidebar inactive" id="sidebar">
+	<div class="accordion-container">
+		<div class="accordion">
+    <input id="accordion-blog" type="checkbox" name="blog-accordion-checkbox" hidden="" checked="checked">
+    <label class="accordion-header c-hand" for="accordion-blog"><i class="fa fa-angle-right"></i> Blog</label>
+    <div class="accordion-body">
+        <ul class="menu menu-nav">
+            <div id="blog-latest"></div>
+        </ul>
+    </div>
+</div>
+<script>
+    $('#blog-latest').FeedEk({
+        FeedUrl: 'https://shrinefox.com/blog/feed',
+        MaxCount: 6,
+        ShowDesc: false,
+        ShowPubDate: false,
+        TitleLinkTarget: '_blank'
+    });
+</script>
+	</div>
+</td>
+<td class="maincontent">
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'justread' ); ?></a>

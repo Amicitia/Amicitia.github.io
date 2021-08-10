@@ -123,6 +123,7 @@
     <Content Include="js\jscolor.js" />
     <Content Include="js\navigation.js" />
     <Content Include="js\showhide.js" />
+    <Content Include="Templates\Blogs\BlogAccordion.html" />
     <Content Include="Templates\Blogs\footer.php" />
     <Content Include="Templates\Blogs\header.php" />
     <Content Include="Templates\Flowscript\compiling.html" />
@@ -131,7 +132,9 @@
     <Content Include="Templates\Flowscript\hookingfunctions.html" />
     <Content Include="Templates\Flowscript\toc.html" />
     <Content Include="Templates\Flowscript\importing.html" />
+    <Content Include="Templates\Forum\ForumAccordion.html" />
     <Content Include="Templates\Forum\LoginAndNotifications.html" />
+    <Content Include="Templates\Forum\overall_footer.html" />
     <Content Include="Templates\Forum\overall_header.html" />
     <Content Include="Templates\IndexAfterHeader.html" />
     <Content Include="Templates\IndexBeforeContent.html" />

@@ -61,11 +61,33 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FZ0cqpXL9EE&amp;amp;list=PLU6By7bu-RSvtk9aDlYplr73lfwpT2fFM&amp;amp;index=1&quot;&gt;&lt;img src=&quot;https://amicitia.github.io/images/404.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;a href=&quot;https://amicitia.github.io/&quot;&gt;Go Back&lt;/a&gt;&lt;/b&gt;&lt;/center&gt;.
+        ///   Looks up a localized string similar to &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;URL=https://shrinefox.com/404&quot;&gt;.
         /// </summary>
         public static string _404 {
             get {
                 return ResourceManager.GetString("_404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;div class=&quot;accordion&quot;&gt;
+        ///    &lt;input id=&quot;accordion-blog&quot; type=&quot;checkbox&quot; name=&quot;blog-accordion-checkbox&quot; hidden=&quot;&quot; checked=&quot;checked&quot;&gt;
+        ///    &lt;label class=&quot;accordion-header c-hand&quot; for=&quot;accordion-blog&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Blog&lt;/label&gt;
+        ///    &lt;div class=&quot;accordion-body&quot;&gt;
+        ///        &lt;ul class=&quot;menu menu-nav&quot;&gt;
+        ///            &lt;div id=&quot;blog-latest&quot;&gt;&lt;/div&gt;
+        ///        &lt;/ul&gt;
+        ///    &lt;/div&gt;
+        ///&lt;/div&gt;
+        ///&lt;script&gt;
+        ///    $(&apos;#blog-latest&apos;).FeedEk({
+        ///        FeedUrl: &apos;https://shrinefox.com/blog/feed&apos;,
+        ///        MaxCount: 6,
+        ///    [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string BlogAccordion {
+            get {
+                return ResourceManager.GetString("BlogAccordion", resourceCulture);
             }
         }
         
@@ -96,23 +118,7 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;br&gt;
-        ///&lt;br&gt;If you need dumped CPK or CVM contents for modding purposes,
-        ///&lt;br&gt;check the links below to download what you need.
-        ///&lt;br&gt;
-        ///&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; Files necessary to actually run the games are &lt;b&gt;not included&lt;/b&gt;.
-        ///&lt;br&gt;These are provided for research and development purposes only.
-        ///&lt;br&gt;
-        ///&lt;br&gt;Some links were removed from this page because the files are no longer available.
-        ///&lt;br&gt;
-        ///&lt;br&gt;
-        ///&lt;center&gt;&lt;h1&gt;Persona&lt;/h1&gt;&lt;/center&gt;
-        ///&lt;hr&gt;
-        ///&lt;br&gt;
-        ///&lt;table&gt;
-        ///    &lt;tbody&gt;
-        ///        &lt;tr style=&quot;opacity:0.5;&quot;&gt;
-        ///            &lt;td&gt;&lt;b [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;URL=https://shrinefox.com/apps/files&quot;&gt;.
         /// </summary>
         public static string Files {
             get {
@@ -153,6 +159,23 @@ namespace Amicitia.github.io.Properties {
         public static string footer {
             get {
                 return ResourceManager.GetString("footer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;div class=&quot;accordion&quot;&gt;
+        ///    &lt;input id=&quot;accordion-forum&quot; type=&quot;checkbox&quot; name=&quot;forum-accordion-checkbox&quot; hidden=&quot;&quot; checked=&quot;checked&quot;&gt;
+        ///    &lt;label class=&quot;accordion-header c-hand&quot; for=&quot;accordion-forum&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Community&lt;/label&gt;
+        ///    &lt;div class=&quot;accordion-body&quot;&gt;
+        ///        &lt;ul class=&quot;menu menu-nav&quot;&gt;
+        ///            &lt;li class=&quot;menu-item&quot;&gt;
+        ///                &lt;a href=&quot;{U_LOGIN_LOGOUT}&quot; title=&quot;{L_LOGIN_LOGOUT}&quot; accesskey=&quot;x&quot;&gt;{L_LOGIN_LOGOUT}&lt;/a&gt;
+        ///            &lt;/li&gt;
+        ///            &lt;!-- IF U_ACP --&gt;        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string ForumAccordion {
+            get {
+                return ResourceManager.GetString("ForumAccordion", resourceCulture);
             }
         }
         
@@ -208,17 +231,7 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;body style=&quot;background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;&quot;&gt;
-        ///    &lt;!--Copied Message--&gt;
-        ///    &lt;div class=&quot;copied&quot;&gt;Copied to Clipboard&lt;/div&gt;
-        ///    &lt;div class=&quot;flex&quot;&gt;
-        ///        &lt;!--TopRow--&gt;
-        ///        &lt;div class=&quot;row top&quot;&gt;
-        ///            &lt;!--Navbar--&gt;
-        ///            &lt;div class=&quot;navbar&quot;&gt;
-        ///                &lt;input type=&quot;checkbox&quot; id=&quot;css3menu-switcher&quot; class=&quot;c3m-switch-input&quot;&gt;
-        ///                &lt;ul id=&quot;css3menu0&quot; class=&quot;topmenu&quot;&gt;
-        ///                    &lt;li class=&quot;switch&quot;&gt;&lt;label oncl [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string IndexAfterHeader {
             get {
@@ -227,14 +240,17 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to             &lt;!--Waves--&gt;
-        ///    &lt;svg class=&quot;waves&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 24 150 28&quot; preserveAspectRatio=&quot;none&quot; shape-rendering=&quot;auto&quot;&gt;
-        ///        &lt;defs&gt;
-        ///            &lt;path id=&quot;gentle-wave&quot; d=&quot;M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z&quot;&gt;&lt;/path&gt;
-        ///        &lt;/defs&gt;
-        ///        &lt;g class=&quot;parallax&quot;&gt;
-        ///            &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
-        ///            &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;3&quot;&gt;&lt;/use&gt;        /// [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;body&gt;
+        ///    &lt;div id=&quot;page-wrapper&quot;&gt;
+        ///        &lt;!--Navbar--&gt;
+        ///        &lt;section id=&quot;header&quot; class=&quot;section scrolled&quot;&gt;
+        ///            &lt;section class=&quot;container grid-lg&quot;&gt;
+        ///                &lt;nav class=&quot;navbar&quot;&gt;
+        ///                    &lt;section class=&quot;navbar-section logo&quot;&gt;
+        ///                        &lt;a href=&quot;https://shrinefox.com&quot; class=&quot;navbar-brand mr-10&quot;&gt;
+        ///                            &lt;!--Logo--&gt;
+        ///                            &lt;svg version=&quot;1.0&quot; class=&quot;amicitialogo&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
+        ///                     [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexBeforeContent {
             get {
@@ -253,20 +269,21 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 								&lt;!--Pagination--&gt;
-        ///                                &lt;/td&gt;
-        ///							&lt;/tr&gt;
-        ///						&lt;/table&gt;
-        ///					&lt;/div&gt;
-        ///                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-        ///                &lt;!--Footer--&gt;
-        ///                &lt;div class=&quot;row bottom&quot;&gt;
-        ///                    &lt;footer&gt;
-        ///                        &lt;table style=&quot;padding-right: 2%;&quot;&gt;
-        ///                            &lt;tbody&gt;
-        ///                                &lt;tr&gt;
-        ///                                    &lt;td id=&quot;about_site&quot; style=&quot;vertical-align: top;width: 25%;&quot;&gt;
-        ///                        [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to                         &lt;/section&gt;
+        ///                    &lt;/section&gt;
+        ///                &lt;/section&gt;
+        ///            &lt;/td&gt;
+        ///        &lt;/tr&gt;
+        ///    &lt;/table&gt;
+        ///&lt;!--Footer--&gt;
+        ///&lt;footer&gt;
+        ///    &lt;table&gt;
+        ///        &lt;tbody&gt;
+        ///            &lt;tr&gt;
+        ///                &lt;td id=&quot;social_links&quot;&gt;
+        ///                    &lt;a href=&quot;https://twitter.com/AmicitiaTeam&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt; AmicitiaTeam&lt;/a&gt;
+        ///                    &lt;br&gt;&lt;a href=&quot;https://reddit.com/r/Amicitia&quot;&gt;&lt;i class=&quot;fab fa-reddit&quot;&gt;&lt;/i&gt; r/Amicitia&lt;/a&gt;
+        ///                    &lt;br&gt;&lt;a href=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexFooter {
             get {
@@ -275,12 +292,13 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;script src=&quot;https://amicitia.github.io/js/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
-        ///&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Lato:wght@300;400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-        ///&lt;script src=&quot;https://kit.fontawesome.com/4c3075832a.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-        ///&lt;script data-ad-client=&quot;ca-pub-9519592525056753&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
-        ///&lt;link href=&quot;https://amicitia.github.io/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
-        ///&lt;link href= [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        ///&lt;link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://shrinefox.com/images/favicon.ico&quot;&gt;
+        ///&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://shrinefox.com/css/spectre.min.css&quot;&gt;
+        ///&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://shrinefox.com/css/theme.min.css&quot;&gt;
+        ///&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://shrinefox.com/css/custom.css&quot;&gt;
+        ///&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://shrinefox.com/css/ytv.css&quot;&gt;
+        ///&lt; [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexHeader {
             get {
@@ -289,20 +307,13 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 				&lt;/td&gt;
-        ///				&lt;!--Sidebar--&gt;
-        ///                &lt;td style=&quot;vertical-align:top;width:20%;text-align:right;font-size:10pt;&quot; class=&quot;bloglinks&quot;&gt;
-        ///					&lt;b&gt;LATEST UPDATES&lt;/b&gt;
-        ///                    &lt;div id=&quot;news-feed&quot;&gt;&lt;/div&gt;
-        ///                    &lt;div id=&quot;guides-feed&quot;&gt;&lt;/div&gt;
-        ///                    &lt;div id=&quot;blog-feed&quot;&gt;&lt;/div&gt;
-        ///                    &lt;script&gt;
-        ///						$(&apos;#news-feed&apos;).FeedEk({
-        ///							FeedUrl:&apos;https://shrinefox.com/news/feed&apos;,
-        ///							MaxCount : 3,
-        ///							ShowDesc : false,
-        ///							ShowPubDate:true,
-        ///							Des [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;div class=&quot;toggle-btn&quot; onclick=&quot;toggleCookie(this)&quot;&gt;&lt;i id=&quot;toggle-icon&quot; class=&quot;fa fa-bars&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Explore&lt;/div&gt;
+        ///&lt;td class=&quot;sidebar inactive&quot; id=&quot;sidebar&quot;&gt;
+        ///	&lt;div class=&quot;accordion-container&quot;&gt;
+        ///		&lt;!--Accordions--&gt;
+        ///	&lt;/div&gt;
+        ///&lt;/td&gt;
+        ///&lt;td class=&quot;maincontent&quot;&gt;.
         /// </summary>
         public static string IndexSidebar {
             get {
@@ -363,15 +374,33 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 		&lt;!-- EVENT overall_footer_content_after --&gt;
+        ///	&lt;/div&gt;
+        ///&lt;!-- EVENT overall_footer_page_body_after --&gt;
+        ///&lt;/div&gt;
+        ///&lt;!--INDEXFOOTER--&gt;
+        ///&lt;div id=&quot;darkenwrapper&quot; class=&quot;darkenwrapper&quot; data-ajax-error-title=&quot;{L_AJAX_ERROR_TITLE}&quot; data-ajax-error-text=&quot;{L_AJAX_ERROR_TEXT}&quot; data-ajax-error-text-abort=&quot;{L_AJAX_ERROR_TEXT_ABORT}&quot; data-ajax-error-text-timeout=&quot;{L_AJAX_ERROR_TEXT_TIMEOUT}&quot; data-ajax-error-text-parsererror=&quot;{L_AJAX_ERROR_TEXT_PARSERERROR}&quot;&gt;
+        ///    &lt;div id=&quot;darken&quot; class=&quot;darken&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        ///&lt;/div&gt;
+        ///
+        ///&lt;div id=&quot;phpb [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string overall_footer {
+            get {
+                return ResourceManager.GetString("overall_footer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;!-- INCLUDE config.html --&gt;
         ///&lt;!DOCTYPE html&gt;
         ///&lt;html dir=&quot;{S_CONTENT_DIRECTION}&quot; lang=&quot;{S_USER_LANG}&quot;&gt;
         ///&lt;head&gt;
-        ///&lt;meta charset=&quot;utf-8&quot; /&gt;
-        ///&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-        ///&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-        ///{META}
-        ///&lt;title&gt;&lt;!-- IF UNREAD_NOTIFICATIONS_COUNT --&gt;({UNREAD_NOTIFICATIONS_COUNT}) &lt;!-- ENDIF --&gt;&lt;!-- IF not S_VIEWTOPIC and not S_VIEWFORUM --&gt;{SITENAME} - &lt;!-- ENDIF --&gt;&lt;!-- IF S_IN_MCP --&gt;{L_MCP} - &lt;!-- ELSEIF S_IN_UCP --&gt;{L_UCP} - &lt;!-- ENDIF --&gt;{PAGE [rest of string was truncated]&quot;;.
+        ///    &lt;meta charset=&quot;utf-8&quot; /&gt;
+        ///    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        ///    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+        ///    {META}
+        ///    &lt;title&gt;&lt;!-- IF UNREAD_NOTIFICATIONS_COUNT --&gt;({UNREAD_NOTIFICATIONS_COUNT}) &lt;!-- ENDIF --&gt;&lt;!-- IF not S_VIEWTOPIC and not S_VIEWFORUM --&gt;{SITENAME} - &lt;!-- ENDIF --&gt;&lt;!-- IF S_IN_MCP --&gt;{L_MCP} - &lt;!-- ELSEIF S_IN_UCP --&gt;{L_UCP} - [rest of string was truncated]&quot;;.
         /// </summary>
         public static string overall_header {
             get {
@@ -380,26 +409,19 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;toggle&quot;&gt;
-        ///    &lt;div class=&quot;toggle-title&quot;&gt;
-        ///        &lt;table cellspacing=&quot;0&quot;&gt;
-        ///            &lt;tr class=&quot;post&quot;&gt;
-        ///                &lt;td&gt;
-        ///                    POSTEMBED
-        ///                &lt;/td&gt;
-        ///                &lt;td&gt;
-        ///                    &lt;b&gt;POSTTITLE&lt;/b&gt;
-        ///                &lt;/td&gt;
-        ///                &lt;td&gt;
+        ///   Looks up a localized string similar to &lt;div class=&quot;card&quot;&gt;
+        ///    &lt;a class=&quot;card__media&quot; href=&quot;POSTMEDIAURL&quot; title=&quot;Media&quot;&gt;
+        ///        &lt;img src=&quot;POSTMEDIAURL&quot; class=&quot;wp-post-image&quot;&gt;
+        ///        &lt;div class=&quot;card__body&quot;&gt;
+        ///            &lt;header class=&quot;card__header&quot;&gt;
+        ///                &lt;a class=&quot;card__subtitle&quot; title=&quot;Category&quot;&gt;
         ///                    POSTTYPE
-        ///                &lt;/td&gt;
-        ///                &lt;td&gt;
-        ///                    POSTAUTHORS
-        ///                &lt;/td&gt;
-        ///                &lt;td&gt;
-        ///                    POSTDATE
-        ///                &lt;/td&gt;
-        ///        [rest of string was truncated]&quot;;.
+        ///                &lt;/a&gt;
+        ///                &lt;h3 class=&quot;card__title&quot;&gt;
+        ///                    &lt;a title=&quot;Title&quot; href=&quot;POSTURL&quot;&gt;POSTTITLE&lt;/a&gt;
+        ///                &lt;/h3&gt;
+        ///                by POSTAUTHORS
+        ///            &lt;/heade [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Post {
             get {

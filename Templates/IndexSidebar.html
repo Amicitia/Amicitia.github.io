@@ -1,41 +1,7 @@
-﻿				</td>
-				<!--Sidebar-->
-                <td style="vertical-align:top;width:20%;text-align:right;font-size:10pt;" class="bloglinks">
-					<b>LATEST UPDATES</b>
-                    <div id="news-feed"></div>
-                    <div id="guides-feed"></div>
-                    <div id="blog-feed"></div>
-                    <script>
-						$('#news-feed').FeedEk({
-							FeedUrl:'https://shrinefox.com/news/feed',
-							MaxCount : 3,
-							ShowDesc : false,
-							ShowPubDate:true,
-							DescCharacterLimit:0,
-							TitleLinkTarget:'_blank',
-							DateFormat: 'MMM d',
-							DateFormatLang:'en'
-						});
-
-						$('#guides-feed').FeedEk({
-							FeedUrl:'https://shrinefox.com/guides/feed',
-							MaxCount : 3,
-							ShowDesc : false,
-							ShowPubDate:true,
-							DescCharacterLimit:0,
-							TitleLinkTarget:'_blank',
-							DateFormat: 'MMM d',
-							DateFormatLang:'en'
-						});
-
-						$('#blog-feed').FeedEk({
-							FeedUrl:'https://shrinefox.com/blog/feed',
-							MaxCount : 3,
-							ShowDesc : false,
-							ShowPubDate:true,
-							DescCharacterLimit:0,
-							TitleLinkTarget:'_blank',
-							DateFormat: 'MMM d',
-							DateFormatLang:'en'
-						});
-                    </script>
+﻿<div class="toggle-btn" onclick="toggleCookie(this)"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i> Explore</div>
+<td class="sidebar inactive" id="sidebar">
+	<div class="accordion-container">
+		<!--Accordions-->
+	</div>
+</td>
+<td class="maincontent">

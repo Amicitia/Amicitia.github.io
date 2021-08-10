@@ -1,0 +1,18 @@
+﻿<div class="accordion">
+    <input id="accordion-blog" type="checkbox" name="blog-accordion-checkbox" hidden="" checked="checked">
+    <label class="accordion-header c-hand" for="accordion-blog"><i class="fa fa-angle-right"></i> Blog</label>
+    <div class="accordion-body">
+        <ul class="menu menu-nav">
+            <div id="blog-latest"></div>
+        </ul>
+    </div>
+</div>
+<script>
+    $('#blog-latest').FeedEk({
+        FeedUrl: 'https://shrinefox.com/blog/feed',
+        MaxCount: 6,
+        ShowDesc: false,
+        ShowPubDate: false,
+        TitleLinkTarget: '_blank'
+    });
+</script>

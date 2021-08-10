@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BlogAccordion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Blogs\BlogAccordion.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="compiling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Flowscript\compiling.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
@@ -132,6 +135,9 @@
   </data>
   <data name="footer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Blogs\footer.php;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ForumAccordion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Forum\ForumAccordion.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="header" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Blogs\header.php;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
@@ -168,6 +174,9 @@
   </data>
   <data name="Navigation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Navigation.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="overall_footer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Forum\overall_footer.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="overall_header" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\Forum\overall_header.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>

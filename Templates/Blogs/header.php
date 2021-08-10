@@ -19,16 +19,8 @@
 	<!--INDEXHEADER-->
 	<?php wp_head(); ?>
 </head>
-<!--INDEXAFTERHEADER-->
-<center>
-	<a href="https://shrinefox.com/<?php echo get_bloginfo('wpurl') ?>">
-		<img src="https://amicitia.github.io/images/logo.svg" style="width:150px;height:150px;">
-		<br><h1>ShrineFox</h1>
-		<h2>Blog</h2>
-	</a>
-</center>
-</div>
 <!--INDEXBEFORECONTENT-->
+<!--INDEXSIDEBAR-->
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'justread' ); ?></a>
