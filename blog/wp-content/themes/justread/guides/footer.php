@@ -22,7 +22,7 @@
                     either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
                     <!--Theme Select-->
                     <br><br>Theme:
-                    <select id="theme" name="theme" onchange="ThemeToggle()">
+                    <select id="theme" name="theme" class="form-select" onchange="ThemeToggle()">
                         <option value="" selected>Default</option>
                         <option value="Blue">Blue</option>
                         <option value="Blue Dark">Blue Dark</option>

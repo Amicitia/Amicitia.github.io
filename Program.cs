@@ -36,37 +36,6 @@ namespace Amicitia.github.io
             // Exe Directory
             indexPath = Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
 
-            // Update .tsv with data from gamebanana
-            Task.Run(async () =>
-            {
-                await Webscraper.UpdateTSVs(indexPath);
-            }).GetAwaiter().GetResult();
-
-            // Order post post from .tsv files by most recent)
-            posts = Post.Get(indexPath).OrderBy(p => DateTime.Parse(p.Date, CultureInfo.CreateSpecificCulture("en-US"))).ToArray().Reverse().ToList();
-            // Delete files if they exist already
-            Page.DeleteExisting(indexPath);
-            // Create main page with all mods, tools, guides and cheats
-            Page.CreateHtml(posts, "index");
-
-            // List all mods, tools, cheats and guides (per game as well)
-            Page.CreateType("mod"); // i.e. amicitia.github.io/mods
-            Page.CreateType("tool"); // i.e. amicitia.github.io/tools/p5
-            Page.CreateType("cheat"); // i.e. amicitia.github.io/cheats/p4
-            Page.CreateType("guide"); // i.e. amicitia.github.io/guides/p5r
-
-            // Create pages for all content per game (regardless of type)
-            Page.CreateGames(posts); // i.e. amicitia.github.io/game/p3fes
-
-            // Searchable type ppostsages
-            Page.CreateAuthors(posts); //amicitia.github.io/author/TGE
-            Page.CreateTags(posts); // i.e. amicitia.github.io/tag/BF
-
-            // All individual posts (hyperlinks)
-            Page.CreateSingle(posts); // i.e. amicitia.github.io/post/amicitia
-
-            // Create flowscript docs
-            Page.FlowscriptDocs(indexPath);
             // Create 404/forum/guides/files pages
             Page.Misc(indexPath);
 

@@ -184,7 +184,7 @@ namespace Amicitia.github.io.PageCreator
             string header = Properties.Resources.overall_header;
             header = header.Replace("<!--INDEXHEADER-->", Properties.Resources.IndexHeader);
             header = header.Replace("<!--INDEXBEFORECONTENT-->", Properties.Resources.IndexBeforeContent.Replace("forumlink","active"));
-            header = header.Replace("<!--INDEXSIDEBAR-->", Properties.Resources.IndexSidebar.Replace("<!--Accordions-->", Properties.Resources.ForumAccordion));
+            header = header.Replace("<!--INDEXSIDEBAR-->", Properties.Resources.IndexSidebar.Replace("<!--Accordions-->", Properties.Resources.ForumAccordion + Properties.Resources.Browse + Properties.Resources.Apps) + $"<a href=\"https://shrinefox.com\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> <i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i><a href=\"https://shrinefox.com/forum\">Forum</a>");
             File.WriteAllText(Path.Combine(forumThemePath, "overall_header.html"), header);
             // Overall Footer
             File.WriteAllText(Path.Combine(forumThemePath, "overall_footer.html"), Properties.Resources.overall_footer.Replace("<!--INDEXFOOTER-->",Properties.Resources.IndexFooter));
@@ -198,7 +198,7 @@ namespace Amicitia.github.io.PageCreator
                 header = Properties.Resources.header;
                 header = header.Replace("<!--INDEXHEADER-->", Properties.Resources.IndexHeader);
                 header = header.Replace("<!--INDEXBEFORECONTENT-->", Properties.Resources.IndexBeforeContent.Replace($"{site}link", "active").Replace("articleslink", "active"));
-                header = header.Replace("<!--INDEXSIDEBAR-->", Properties.Resources.IndexSidebar.Replace("<!--Accordions-->",Properties.Resources.BlogAccordion.Replace("blog",site).Replace("Blog", FirstCharToUpper(site))));
+                header = header.Replace("<!--INDEXSIDEBAR-->", Properties.Resources.IndexSidebar.Replace("<!--Accordions-->", Properties.Resources.BlogAccordion.Replace("blog",site).Replace("Blog", FirstCharToUpper(site)) + Properties.Resources.Browse + Properties.Resources.Apps) + $"<a href=\"https://shrinefox.com\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> ShrineFox.com</a> <i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i><a href=\"https://shrinefox.com/{site}\">{FirstCharToUpper(site)}</a>");
                 if (!Directory.Exists(path))
                     Directory.CreateDirectory(path);
                 File.WriteAllText(Path.Combine(path, "header.php"), header);

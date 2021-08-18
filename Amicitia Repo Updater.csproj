@@ -123,7 +123,10 @@
     <Content Include="js\jscolor.js" />
     <Content Include="js\navigation.js" />
     <Content Include="js\showhide.js" />
-    <Content Include="Templates\Blogs\BlogAccordion.html" />
+    <Content Include="Templates\Accordions\Apps.html" />
+    <Content Include="Templates\Accordions\BlogAccordion.html" />
+    <Content Include="Templates\Accordions\Browse.html" />
+    <Content Include="Templates\Accordions\Games.html" />
     <Content Include="Templates\Blogs\footer.php" />
     <Content Include="Templates\Blogs\header.php" />
     <Content Include="Templates\Flowscript\compiling.html" />

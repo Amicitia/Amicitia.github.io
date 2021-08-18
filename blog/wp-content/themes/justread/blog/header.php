@@ -200,10 +200,52 @@
         ShowPubDate: false,
         TitleLinkTarget: '_blank'
     });
-</script>
+</script><div class="accordion">
+    <input id="accordion-browse" type="checkbox" name="browse-accordion-checkbox" hidden="" checked="checked">
+    <label class="accordion-header c-hand" for="accordion-browse"><i class="fa fa-angle-right"></i> Browse</label>
+    <div class="accordion-body">
+        <ul class="menu menu-nav">
+            <li class="menu-item">
+                <a href="https://shrinefox.com/browse" class="typeall">All</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/browse?type=Mod" class="typemod">Mods</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/browse?type=Tool" class="typetool">Tools</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/browse?type=Guide" class="typeguide">Guides</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/browse?type=Cheat" class="typecheat">Cheats</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="accordion">
+    <input id="accordion-apps" type="checkbox" name="apps-accordion-checkbox" hidden="" checked="checked">
+    <label class="accordion-header c-hand" for="accordion-apps"><i class="fa fa-angle-right"></i> Apps</label>
+    <div class="accordion-body">
+        <ul class="menu menu-nav">
+            <li class="menu-item">
+                <a href="https://shrinefox.com/apps/PatchCreator" class="rpcs3patchlink">RPCS3 Patch Creator</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/apps/UpdateCreator" class="ps4patchlink">PS4 Patch Creator</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/apps/TextSearch" class="textsearchlink">Text Search</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://shrinefox.com/apps/files" class="fileslink">Files</a>
+            </li>
+        </ul>
+    </div>
+</div>
 	</div>
 </td>
-<td class="maincontent">
+<td class="maincontent"><a href="https://shrinefox.com"><i class="fa fa-home" aria-hidden="true"></i> ShrineFox.com</a> <i class="fa fa-angle-right" aria-hidden="true"></i><a href="https://shrinefox.com/blog">Blog</a>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'justread' ); ?></a>

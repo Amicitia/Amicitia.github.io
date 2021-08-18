@@ -71,6 +71,23 @@ namespace Amicitia.github.io.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;div class=&quot;accordion&quot;&gt;
+        ///    &lt;input id=&quot;accordion-apps&quot; type=&quot;checkbox&quot; name=&quot;apps-accordion-checkbox&quot; hidden=&quot;&quot; checked=&quot;checked&quot;&gt;
+        ///    &lt;label class=&quot;accordion-header c-hand&quot; for=&quot;accordion-apps&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Apps&lt;/label&gt;
+        ///    &lt;div class=&quot;accordion-body&quot;&gt;
+        ///        &lt;ul class=&quot;menu menu-nav&quot;&gt;
+        ///            &lt;li class=&quot;menu-item&quot;&gt;
+        ///                &lt;a href=&quot;https://shrinefox.com/apps/PatchCreator&quot; class=&quot;rpcs3patchlink&quot;&gt;RPCS3 Patch Creator&lt;/a&gt;
+        ///            &lt;/li&gt;
+        ///            &lt;li class=&quot;menu- [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Apps {
+            get {
+                return ResourceManager.GetString("Apps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;div class=&quot;accordion&quot;&gt;
         ///    &lt;input id=&quot;accordion-blog&quot; type=&quot;checkbox&quot; name=&quot;blog-accordion-checkbox&quot; hidden=&quot;&quot; checked=&quot;checked&quot;&gt;
         ///    &lt;label class=&quot;accordion-header c-hand&quot; for=&quot;accordion-blog&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Blog&lt;/label&gt;
         ///    &lt;div class=&quot;accordion-body&quot;&gt;
@@ -88,6 +105,24 @@ namespace Amicitia.github.io.Properties {
         public static string BlogAccordion {
             get {
                 return ResourceManager.GetString("BlogAccordion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;div class=&quot;accordion&quot;&gt;
+        ///    &lt;input id=&quot;accordion-browse&quot; type=&quot;checkbox&quot; name=&quot;browse-accordion-checkbox&quot; hidden=&quot;&quot; checked=&quot;checked&quot;&gt;
+        ///    &lt;label class=&quot;accordion-header c-hand&quot; for=&quot;accordion-browse&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Browse&lt;/label&gt;
+        ///    &lt;div class=&quot;accordion-body&quot;&gt;
+        ///        &lt;ul class=&quot;menu menu-nav&quot;&gt;
+        ///            &lt;li class=&quot;menu-item&quot;&gt;
+        ///                &lt;a href=&quot;https://shrinefox.com/browse&quot; class=&quot;typeall&quot;&gt;All&lt;/a&gt;
+        ///            &lt;/li&gt;
+        ///            &lt;li class=&quot;menu-item&quot;&gt;
+        ///                &lt;a [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Browse {
+            get {
+                return ResourceManager.GetString("Browse", resourceCulture);
             }
         }
         
@@ -176,6 +211,24 @@ namespace Amicitia.github.io.Properties {
         public static string ForumAccordion {
             get {
                 return ResourceManager.GetString("ForumAccordion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;div class=&quot;accordion&quot;&gt;
+        ///    &lt;input id=&quot;accordion-games&quot; type=&quot;checkbox&quot; name=&quot;games-accordion-checkbox&quot; hidden=&quot;&quot; checked=&quot;checked&quot;&gt;
+        ///    &lt;label class=&quot;accordion-header c-hand&quot; for=&quot;accordion-games&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Games&lt;/label&gt;
+        ///    &lt;div class=&quot;accordion-body&quot;&gt;
+        ///        &lt;ul class=&quot;menu menu-nav&quot;&gt;
+        ///            &lt;li class=&quot;menu-item&quot;&gt;
+        ///                &lt;a href=&quot;https://shrinefox.com/browse&quot; class=&quot;gameall&quot;&gt;All&lt;/a&gt;
+        ///            &lt;/li&gt;
+        ///            &lt;li class=&quot;menu-item&quot;&gt;
+        ///                &lt;a hre [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Games {
+            get {
+                return ResourceManager.GetString("Games", resourceCulture);
             }
         }
         
@@ -383,7 +436,7 @@ namespace Amicitia.github.io.Properties {
         ///    &lt;div id=&quot;darken&quot; class=&quot;darken&quot;&gt;&amp;nbsp;&lt;/div&gt;
         ///&lt;/div&gt;
         ///
-        ///&lt;div id=&quot;phpb [rest of string was truncated]&quot;;.
+        ///&lt;div [rest of string was truncated]&quot;;.
         /// </summary>
         public static string overall_footer {
             get {
@@ -400,7 +453,7 @@ namespace Amicitia.github.io.Properties {
         ///    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
         ///    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
         ///    {META}
-        ///    &lt;title&gt;&lt;!-- IF UNREAD_NOTIFICATIONS_COUNT --&gt;({UNREAD_NOTIFICATIONS_COUNT}) &lt;!-- ENDIF --&gt;&lt;!-- IF not S_VIEWTOPIC and not S_VIEWFORUM --&gt;{SITENAME} - &lt;!-- ENDIF --&gt;&lt;!-- IF S_IN_MCP --&gt;{L_MCP} - &lt;!-- ELSEIF S_IN_UCP --&gt;{L_UCP} - [rest of string was truncated]&quot;;.
+        ///    &lt;title&gt;&lt;!-- IF UNREAD_NOTIFICATIONS_COUNT --&gt;({UNREAD_NOTIFICATIONS_COUNT}) &lt;!-- ENDIF --&gt;&lt;!-- IF not S_VIEWTOPIC and not S_VIEWFORUM --&gt;{SITENAME} - &lt;!-- ENDIF --&gt;&lt;!-- IF S_IN_MCP --&gt;{L_MCP} - &lt;!-- ELSEIF S_IN_UCP --&gt;{ [rest of string was truncated]&quot;;.
         /// </summary>
         public static string overall_header {
             get {
